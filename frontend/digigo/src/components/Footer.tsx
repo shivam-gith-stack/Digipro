@@ -45,7 +45,7 @@ const Footer = () => {
                 <span className="text-blue-700 font-bold text-xl">D</span>
               </div>
               <span className="text-xl font-bold">
-                LumivexGrowth<span className="text-white/80">Pro</span>
+                LumivexGrowth
               </span>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">

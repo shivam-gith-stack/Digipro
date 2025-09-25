@@ -42,7 +42,7 @@ const Header = () => {
               <span className="text-white font-bold text-xl">L</span>
             </div>
             <span className="text-2xl font-bold text-gray-900">
-              LumivexGrowth<span className="text-black">Pro</span>
+              LumivexGrowth
             </span>
           </Link>
 
