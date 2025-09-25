@@ -59,7 +59,7 @@ const Testimonials = () => {
         metric2: "250% Website Traffic", 
         metric3: "600% ROI"
       },
-      testimonial: "Working with Digital Marketing Pro has been absolutely transformational for our business. When we started, we were struggling to generate quality leads and our website traffic was stagnant. Within just 3 months of implementing their SEO and PPC strategies, we saw a 400% increase in qualified leads. Their approach is incredibly data-driven and they explain everything in terms that make sense for our business. The ROI has been outstanding - we're seeing 600% return on our marketing investment. I can't recommend them highly enough!",
+      testimonial: "Working with LumivexGrowth Marketing has been absolutely transformational for our business. When we started, we were struggling to generate quality leads and our website traffic was stagnant. Within just 3 months of implementing their SEO and PPC strategies, we saw a 400% increase in qualified leads. Their approach is incredibly data-driven and they explain everything in terms that make sense for our business. The ROI has been outstanding - we're seeing 600% return on our marketing investment. I can't recommend them highly enough!",
       services: ["SEO", "Google Ads", "Content Marketing"]
     },
     {
@@ -76,7 +76,7 @@ const Testimonials = () => {
         metric2: "150% New Members",
         metric3: "500% ROI"
       },
-      testimonial: "As a local fitness business, I was skeptical about digital marketing. I thought word-of-mouth was enough. I was completely wrong! Digital Marketing Pro transformed our online presence with their local SEO strategies. We went from barely showing up in Google searches to ranking #1 for all our target keywords. Our website traffic from local searches increased by 300%, and we've seen a 150% increase in new member signups. The investment has paid for itself many times over. They truly understand local business needs.",
+      testimonial: "As a local fitness business, I was skeptical about digital marketing. I thought word-of-mouth was enough. I was completely wrong! LumivexGrowth Marketing transformed our online presence with their local SEO strategies. We went from barely showing up in Google searches to ranking #1 for all our target keywords. Our website traffic from local searches increased by 300%, and we've seen a 150% increase in new member signups. The investment has paid for itself many times over. They truly understand local business needs.",
       services: ["Local SEO", "Google My Business", "Social Media"]
     },
     {
@@ -93,7 +93,7 @@ const Testimonials = () => {
         metric2: "280% Conversion Rate",
         metric3: "450% ROAS"
       },
-      testimonial: "Our e-commerce business was stuck in a plateau. We had decent traffic but terrible conversion rates and our paid advertising was burning money without results. Digital Marketing Pro completely overhauled our approach. They optimized our website for conversions, restructured our Google Ads campaigns, and implemented email automation sequences. The results speak for themselves - 350% revenue growth in 6 months, conversion rates increased by 280%, and our return on ad spend improved to 450%. This is the best investment we've ever made in our business.",
+      testimonial: "Our e-commerce business was stuck in a plateau. We had decent traffic but terrible conversion rates and our paid advertising was burning money without results. LumivexGrowth Marketing completely overhauled our approach. They optimized our website for conversions, restructured our Google Ads campaigns, and implemented email automation sequences. The results speak for themselves - 350% revenue growth in 6 months, conversion rates increased by 280%, and our return on ad spend improved to 450%. This is the best investment we've ever made in our business.",
       services: ["PPC Management", "CRO", "Email Marketing"]
     },
     {
@@ -110,7 +110,7 @@ const Testimonials = () => {
         metric2: "200% Website Traffic",
         metric3: "800% ROI"
       },
-      testimonial: "In the professional services industry, generating high-quality leads is everything. We were spending thousands on traditional marketing with poor results. Digital Marketing Pro developed a comprehensive content marketing and SEO strategy that positioned us as thought leaders in our industry. Not only did our website traffic double, but the quality of our leads improved by 500%. We're now attracting enterprise clients who found us through organic search. The ROI has been phenomenal - over 800% return on our investment.",
+      testimonial: "In the professional services industry, generating high-quality leads is everything. We were spending thousands on traditional marketing with poor results. LumivexGrowth Marketing developed a comprehensive content marketing and SEO strategy that positioned us as thought leaders in our industry. Not only did our website traffic double, but the quality of our leads improved by 500%. We're now attracting enterprise clients who found us through organic search. The ROI has been phenomenal - over 800% return on our investment.",
       services: ["SEO", "Content Marketing", "LinkedIn Ads"]
     },
     {
@@ -127,7 +127,7 @@ const Testimonials = () => {
         metric2: "400% Online Visibility",
         metric3: "300% Patient Referrals"
       },
-      testimonial: "Healthcare marketing has unique challenges and compliance requirements. Digital Marketing Pro understood this from day one and created strategies that were both effective and compliant. Their local SEO work helped us rank for healthcare services in our area, and their social media management built trust with our community. We've seen a 600% increase in online appointment bookings and our patient referrals have tripled. They're true professionals who deliver exceptional results.",
+      testimonial: "Healthcare marketing has unique challenges and compliance requirements. LumivexGrowth Marketing understood this from day one and created strategies that were both effective and compliant. Their local SEO work helped us rank for healthcare services in our area, and their social media management built trust with our community. We've seen a 600% increase in online appointment bookings and our patient referrals have tripled. They're true professionals who deliver exceptional results.",
       services: ["Local SEO", "Social Media", "Reputation Management"]
     },
     {
@@ -144,7 +144,7 @@ const Testimonials = () => {
         metric2: "300% Sales Pipeline",
         metric3: "450% Revenue Growth"
       },
-      testimonial: "Manufacturing isn't typically thought of as a digital business, but Digital Marketing Pro proved that wrong. They developed a B2B focused strategy that included LinkedIn advertising, industry-specific content marketing, and technical SEO. The results have been staggering - we've generated 750% more qualified B2B leads, our sales pipeline has tripled, and revenue is up 450%. They transformed how we think about marketing and customer acquisition.",
+      testimonial: "Manufacturing isn't typically thought of as a digital business, but LumivexGrowth Marketing proved that wrong. They developed a B2B focused strategy that included LinkedIn advertising, industry-specific content marketing, and technical SEO. The results have been staggering - we've generated 750% more qualified B2B leads, our sales pipeline has tripled, and revenue is up 450%. They transformed how we think about marketing and customer acquisition.",
       services: ["B2B Marketing", "LinkedIn Ads", "Technical SEO"]
     }
   ];

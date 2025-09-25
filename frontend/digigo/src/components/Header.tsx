@@ -39,10 +39,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 z-50">
             <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">D</span>
+              <span className="text-white font-bold text-xl">L</span>
             </div>
             <span className="text-2xl font-bold text-gray-900">
-              Digital<span className="text-black">Pro</span>
+              LumivexGrowth<span className="text-black">Pro</span>
             </span>
           </Link>
 
