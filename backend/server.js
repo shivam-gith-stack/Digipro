@@ -10,6 +10,7 @@ app.use(cors({
     origin: ["https://lumivxgrowth-three.vercel.app"], 
     credentials: true
 }));
+app.options("*", cors());
 
 app.use(express.json());
 app.use(bodyparser.json()); 
