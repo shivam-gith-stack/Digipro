@@ -7,7 +7,7 @@ const bodyparser = require("body-parser");
 const dbconnection = require("./database");
 
 app.use(cors({
-    origin: ["http://localhost:5173"], 
+    origin: ["https://lumivxgrowth-three.vercel.app/"], 
     credentials: true
 }));
 
