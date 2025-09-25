@@ -45,7 +45,7 @@ const Footer = () => {
                 <span className="text-blue-700 font-bold text-xl">D</span>
               </div>
               <span className="text-xl font-bold">
-                Digital<span className="text-white/80">Pro</span>
+                LumivexGrowth<span className="text-white/80">Pro</span>
               </span>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
@@ -144,7 +144,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/60 text-sm text-center md:text-left">
-              © {currentYear} Digital Marketing Pro. All rights reserved.
+              © {currentYear} LumivexGrowth Marketing Pro. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-white/60 hover:text-white transition-colors">
