@@ -39,7 +39,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   try {
     // 1️⃣ Send to Node.js backend
-    const response = await fetch("http://localhost:4000/api/v1/register", {
+    const response = await fetch("https://digipro-2.onrender.com/api/v1/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -301,41 +301,58 @@ const handleSubmit = async (e: React.FormEvent) => {
                         className="border-gray-300 focus:border-blue-500 transition-colors"
                       />
                     </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  {/* Business Type */}
+  <div className="space-y-2">
+    <Label htmlFor="business-type" className="text-gray-700">Business Type</Label>
+    <Select
+      value={formData.businessType}
+      onValueChange={(value) => handleInputChange("businessType", value)}
+    >
+      <SelectTrigger className="w-full border-gray-300 focus:border-blue-500 transition-colors text-left">
+        <SelectValue placeholder="Select business type" />
+      </SelectTrigger>
+      <SelectContent
+        position="popper"
+        sideOffset={4}
+        className="w-full min-w-[8rem] z-50 bg-white border border-gray-200 rounded-md shadow-md"
+      >
+        <SelectItem value="ecommerce">E-commerce</SelectItem>
+        <SelectItem value="saas">SaaS/Technology</SelectItem>
+        <SelectItem value="local">Local Business</SelectItem>
+        <SelectItem value="b2b">B2B Services</SelectItem>
+        <SelectItem value="professional">Professional Services</SelectItem>
+        <SelectItem value="healthcare">Healthcare</SelectItem>
+        <SelectItem value="other">Other</SelectItem>
+      </SelectContent>
+    </Select>
+  </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="business-type" className="text-gray-700">Business Type</Label>
-                        <Select value={formData.businessType} onValueChange={(value) => handleInputChange("businessType", value)}>
-                          <SelectTrigger className="w-full border-gray-300 focus:border-blue-500 transition-colors text-left">
-                            <SelectValue placeholder="Select business type" />
-                          </SelectTrigger>
-                          <SelectContent className="w-full max-w-[var(--radix-select-trigger-width)] min-w-[8rem]">
-                            <SelectItem value="ecommerce">E-commerce</SelectItem>
-                            <SelectItem value="saas">SaaS/Technology</SelectItem>
-                            <SelectItem value="local">Local Business</SelectItem>
-                            <SelectItem value="b2b">B2B Services</SelectItem>
-                            <SelectItem value="professional">Professional Services</SelectItem>
-                            <SelectItem value="healthcare">Healthcare</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="budget" className="text-gray-700">Monthly Budget Range</Label>
-                        <Select value={formData.budget} onValueChange={(value) => handleInputChange("budget", value)}>
-                          <SelectTrigger className="w-full border-gray-300 focus:border-blue-500 transition-colors text-left">
-                            <SelectValue placeholder="Select budget range" />
-                          </SelectTrigger>
-                          <SelectContent className="w-full max-w-[var(--radix-select-trigger-width)] min-w-[8rem]">
-                            <SelectItem value="under-1k">Under 5,000</SelectItem>
-                            <SelectItem value="1k-3k">5,000 - 10,000</SelectItem>
-                            <SelectItem value="3k-5k">10,000 - 20,000</SelectItem>
-                            <SelectItem value="5k-10k">20,000 - 30,000</SelectItem>
-                            <SelectItem value="10k-plus">30,000+</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
+  {/* Monthly Budget Range */}
+  <div className="space-y-2">
+    <Label htmlFor="budget" className="text-gray-700">Monthly Budget Range</Label>
+    <Select
+      value={formData.budget}
+      onValueChange={(value) => handleInputChange("budget", value)}
+    >
+      <SelectTrigger className="w-full border-gray-300 focus:border-blue-500 transition-colors text-left">
+        <SelectValue placeholder="Select budget range" />
+      </SelectTrigger>
+      <SelectContent
+        position="popper"
+        sideOffset={4}
+        className="w-full min-w-[8rem] z-50 bg-white border border-gray-200 rounded-md shadow-md"
+      >
+        <SelectItem value="under-1k">Under 5,000</SelectItem>
+        <SelectItem value="1k-3k">5,000 - 10,000</SelectItem>
+        <SelectItem value="3k-5k">10,000 - 20,000</SelectItem>
+        <SelectItem value="5k-10k">20,000 - 30,000</SelectItem>
+        <SelectItem value="10k-plus">30,000+</SelectItem>
+      </SelectContent>
+    </Select>
+  </div>
+</div>
+
 
                     <div className="space-y-2">
                       <Label htmlFor="project-details" className="text-gray-700">Project Details *</Label>
