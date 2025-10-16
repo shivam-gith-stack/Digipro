@@ -425,6 +425,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                          India
+                        </li>
+                        <li className="flex items-center">
+                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
                           United States
                         </li>
                         <li className="flex items-center">
@@ -458,7 +462,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         </li>
                         <li className="flex items-center">
                           <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></div>
-                          Other English-speaking markets
+                          Other Markets
                         </li>
                       </ul>
                     </div>
