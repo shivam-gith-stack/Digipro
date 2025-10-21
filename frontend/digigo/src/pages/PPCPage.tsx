@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,43 +14,220 @@ const PPCPage = () => {
   const toggleExpanded = (index: number) =>
     setExpandedPosts(prev => prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]);
 
+  // Main Page SEO Meta Data
+  const pageMeta = {
+    title: "PPC Management Agency | Google Ads Experts 2025 | Maximize ROI & Conversions",
+    description: "Expert PPC management services delivering 300% ROI. Google Ads, Facebook Ads, and paid search campaign optimization. Free PPC audit and consultation available.",
+    keywords: "PPC management, Google Ads, paid search, PPC agency, Facebook Ads, pay-per-click, ad campaign management, ROI optimization, conversion rate optimization",
+    canonical: "https://youragency.com/ppc-management"
+  };
+
   // Optimized PPC-related images with WebP format and preloading
   const blogPosts = [
     {
       title: "Maximize ROI with Google Ads in 2025",
       excerpt: "Learn how to structure your Google Ads campaigns for maximum return on ad spend.",
-      fullContent: `Google Ads can deliver immediate traffic and leads if set up correctly. Focus on proper campaign structure, ad group segmentation, and targeted keywords. Monitor metrics like CTR, Quality Score, and conversion rate. Regular A/B testing of ad copy and landing pages ensures you get the best ROI.`,
+      fullContent: `Google Ads can deliver immediate traffic and leads if set up correctly. Focus on proper campaign structure, ad group segmentation, and targeted keywords. Monitor metrics like CTR, Quality Score, and conversion rate. Regular A/B testing of ad copy and landing pages ensures you get the best ROI.
+
+**Advanced Google Ads Strategies for 2025:**
+
+**Campaign Structure Optimization:**
+- **SKAGs (Single Keyword Ad Groups)**: 1-2 keywords per ad group for maximum relevance
+- **RLSA (Remarketing Lists for Search Ads)**: Target previous visitors with customized messaging
+- **Smart Bidding Strategies**: Use Target CPA, Target ROAS, and Maximize Conversions
+- **Ad Extensions**: Implement all relevant extensions (sitelinks, callouts, structured snippets)
+- **Competitor Analysis**: Monitor competitor strategies and adjust bidding accordingly
+
+**Performance Metrics to Track:**
+- **Quality Score**: Aim for 8-10/10 to reduce CPC by up to 50%
+- **Click-Through Rate (CTR)**: Industry average 2-5%, aim for 5%+
+- **Conversion Rate**: Optimize for 3-7% depending on industry
+- **Cost Per Acquisition (CPA)**: Monitor and optimize for maximum profitability
+- **Return on Ad Spend (ROAS)**: Target 4:1 or higher for sustainable growth
+
+**2025 Google Ads Updates:**
+- AI-powered bidding optimization
+- Enhanced audience targeting capabilities
+- Voice search ad integration
+- Visual search advertising features
+- Automated creative optimization
+
+Focus on proper campaign structure, ad group segmentation, and targeted keywords. Monitor metrics like CTR, Quality Score, and conversion rate. Regular A/B testing of ad copy and landing pages ensures you get the best ROI.`,
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=600&q=80",
       category: "PPC",
       date: "September 20, 2025",
-      readTime: "7 min read"
+      readTime: "7 min read",
+      meta: {
+        title: "Google Ads ROI Maximization 2025 | 300% ROI Strategies & Campaign Optimization",
+        description: "Maximize Google Ads ROI with 2025 strategies: SKAGs, RLSA, smart bidding, Quality Score optimization, and AI-powered campaign management for 300%+ returns.",
+        keywords: "Google Ads ROI, PPC optimization, campaign structure, Quality Score, smart bidding, ad extensions"
+      }
     },
     {
       title: "Advanced Bid Management Techniques",
       excerpt: "Discover strategies to control your ad spend and increase conversions.",
-      fullContent: `Bid management is key to maximizing ROI. Use automated bidding strategies like Target CPA or Target ROAS. Monitor campaign performance, adjust bids based on device, location, and audience. Avoid overbidding on low-converting keywords, and prioritize high-performing campaigns.`,
+      fullContent: `Bid management is key to maximizing ROI. Use automated bidding strategies like Target CPA or Target ROAS. Monitor campaign performance, adjust bids based on device, location, and audience. Avoid overbidding on low-converting keywords, and prioritize high-performing campaigns.
+
+**Comprehensive Bid Management Framework:**
+
+**Automated Bidding Strategies:**
+- **Target CPA**: Set target cost-per-acquisition for consistent conversion costs
+- **Target ROAS**: Optimize for specific return on ad spend percentages
+- **Maximize Conversions**: Let Google automatically maximize conversion volume
+- **Enhanced CPC**: Manual bidding with smart adjustments
+- **Portfolio Bid Strategies**: Manage multiple campaigns with unified goals
+
+**Manual Bid Optimization Techniques:**
+- **Device Bid Adjustments**: Mobile: +20%, Tablet: -10%, Desktop: Base
+- **Location Bid Modifiers**: +15-25% for high-converting geographic areas
+- **Time-of-Day Optimization**: Increase bids during peak conversion hours
+- **Audience Bid Adjustments**: +10-30% for high-value remarketing lists
+- **Competitive Position Adjustments**: Monitor and adjust for top positions
+
+**Performance Monitoring & Adjustment:**
+- Daily performance reviews and bid adjustments
+- Weekly competitive analysis and strategy refinement
+- Monthly portfolio optimization and budget reallocation
+- Quarterly strategy reviews and testing new approaches
+
+**Tools for Advanced Bid Management:**
+- Google Ads Scripts for automated bid rules
+- Third-party bid management platforms
+- Custom reporting and analytics dashboards
+- Machine learning algorithms for predictive bidding
+
+Bid management is key to maximizing ROI. Use automated bidding strategies like Target CPA or Target ROAS. Monitor campaign performance, adjust bids based on device, location, and audience. Avoid overbidding on low-converting keywords, and prioritize high-performing campaigns.`,
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=600&q=80",
       category: "PPC",
       date: "September 15, 2025",
-      readTime: "6 min read"
+      readTime: "6 min read",
+      meta: {
+        title: "PPC Bid Management 2025 | Automated Bidding & ROI Optimization Strategies",
+        description: "Advanced PPC bid management techniques: Target CPA, Target ROAS, device/location bidding, audience adjustments, and automated optimization for maximum conversions.",
+        keywords: "PPC bid management, automated bidding, Target CPA, Target ROAS, bid adjustments, conversion optimization"
+      }
     },
     {
       title: "Creating High-Converting Landing Pages",
       excerpt: "Learn design and copy techniques to improve PPC conversion rates.",
-      fullContent: `Landing pages are critical for converting clicks into customers. Use clear CTAs, minimal distractions, persuasive copy, and fast-loading pages. Split-test layouts and headlines to optimize conversion rates. Integrate tracking for precise performance measurement.`,
+      fullContent: `Landing pages are critical for converting clicks into customers. Use clear CTAs, minimal distractions, persuasive copy, and fast-loading pages. Split-test layouts and headlines to optimize conversion rates. Integrate tracking for precise performance measurement.
+
+**Landing Page Optimization Framework:**
+
+**Design Best Practices:**
+- **Above-the-Fold Optimization**: Clear value proposition and primary CTA
+- **Mobile-First Design**: 60% of PPC traffic comes from mobile devices
+- **Loading Speed**: Aim for under 2-second load time (affects Quality Score)
+- **Visual Hierarchy**: Guide visitors through logical conversion paths
+- **Trust Signals**: Testimonials, security badges, and social proof
+
+**Conversion Rate Optimization (CRO):**
+- **A/B Testing**: Test headlines, CTAs, images, and form lengths
+- **Multivariate Testing**: Test multiple elements simultaneously
+- **Heatmap Analysis**: Understand user behavior and engagement patterns
+- **Exit-Intent Popups**: Capture abandoning visitors with special offers
+- **Chat Integration**: Live chat for immediate customer support
+
+**Content & Copywriting Strategies:**
+- **Benefit-Oriented Headlines**: Focus on customer outcomes, not features
+- **Pain Point Addressing**: Identify and solve specific customer problems
+- **Social Proof Integration**: Case studies, testimonials, and user statistics
+- **Urgency & Scarcity**: Limited-time offers and inventory alerts
+- **Clear Value Proposition**: Immediate understanding of your offer
+
+**Technical Optimization:**
+- **Conversion Tracking**: Google Ads and Analytics implementation
+- **Page Speed Optimization**: Core Web Vitals compliance
+- **SEO Elements**: Meta tags, structured data, and internal linking
+- **Security**: SSL certificates and privacy policy compliance
+- **Accessibility**: WCAG 2.1 compliance for broader audience reach
+
+Landing pages are critical for converting clicks into customers. Use clear CTAs, minimal distractions, persuasive copy, and fast-loading pages. Split-test layouts and headlines to optimize conversion rates. Integrate tracking for precise performance measurement.`,
       image: "https://images.unsplash.com/photo-1556655848-f3a79cc6d4a6?auto=format&fit=crop&w=1200&h=600&q=80",
       category: "Landing Page",
       date: "September 10, 2025",
-      readTime: "8 min read"
+      readTime: "8 min read",
+      meta: {
+        title: "High-Converting Landing Pages 2025 | PPC Conversion Rate Optimization Guide",
+        description: "Create high-converting landing pages for PPC: design best practices, CRO techniques, A/B testing, mobile optimization, and trust signals for maximum conversions.",
+        keywords: "landing page optimization, conversion rate optimization, PPC landing pages, A/B testing, CRO strategies"
+      }
     }
   ];
 
   const faqs = [
-    { question: "How much should I spend on Google Ads?", answer: "Ad spend depends on your business goals, industry, and competition. Start small, monitor results, and scale successful campaigns." },
-    { question: "Can PPC replace SEO?", answer: "No. PPC delivers immediate traffic, but SEO builds long-term organic visibility. A combined strategy yields the best results." },
-    { question: "How do I track conversions effectively?", answer: "Use Google Ads conversion tracking, Google Analytics, and proper landing page tracking to measure performance accurately." },
-    { question: "What is a good CTR for PPC?", answer: "A typical CTR ranges from 2% to 5% depending on industry. Higher CTR usually indicates better ad relevance and targeting." },
-    { question: "Should I run PPC continuously?", answer: "Yes, continuous campaigns help maintain visibility, collect data, and improve ROI over time through optimization." }
+    { 
+      question: "How much should I spend on Google Ads?", 
+      answer: "Ad spend depends on your business goals, industry, and competition. Start with a test budget of $1,000-$2,000 monthly, then scale based on performance. Most businesses achieve positive ROI with monthly budgets of $2,500-$10,000. We recommend allocating 7-12% of projected revenue to PPC for optimal growth.",
+      meta: {
+        title: "Google Ads Budget 2025 | How Much to Spend on PPC | ROI Optimization",
+        description: "Google Ads budget recommendations: Start with $1,000-$2,000 monthly, scale to $2,500-$10,000. Allocate 7-12% of revenue for optimal PPC ROI and growth.",
+        keywords: "Google Ads budget, PPC spending, ad spend recommendations, ROI optimization, campaign budget"
+      }
+    },
+    { 
+      question: "Can PPC replace SEO?", 
+      answer: "No. PPC delivers immediate traffic, but SEO builds long-term organic visibility. A combined strategy yields the best results. PPC provides instant testing data for SEO keywords, while SEO reduces long-term customer acquisition costs. Businesses using both channels see 25% higher conversion rates and 30% lower overall marketing costs.",
+      meta: {
+        title: "PPC vs SEO 2025 | Paid vs Organic Search | Integrated Digital Marketing",
+        description: "PPC vs SEO: PPC delivers immediate traffic, SEO builds long-term visibility. Combined strategy increases conversions by 25% and reduces costs by 30%.",
+        keywords: "PPC vs SEO, paid vs organic search, digital marketing strategy, integrated campaigns, SEO and PPC"
+      }
+    },
+    { 
+      question: "How do I track conversions effectively?", 
+      answer: "Use Google Ads conversion tracking, Google Analytics, and proper landing page tracking to measure performance accurately. Implement Google Tag Manager for advanced tracking, set up conversion goals, track micro-conversions, and use UTM parameters for campaign attribution. Proper tracking typically reveals 20-30% more conversions than basic setup.",
+      meta: {
+        title: "PPC Conversion Tracking 2025 | Google Ads & Analytics Setup | Performance Measurement",
+        description: "Effective PPC conversion tracking: Google Ads conversion tracking, Google Analytics, Tag Manager, UTM parameters, and advanced attribution for accurate performance measurement.",
+        keywords: "PPC conversion tracking, Google Ads tracking, analytics setup, conversion measurement, campaign attribution"
+      }
+    },
+    { 
+      question: "What is a good CTR for PPC?", 
+      answer: "A typical CTR ranges from 2% to 5% depending on industry. Higher CTR usually indicates better ad relevance and targeting. Search ads average 3-5% CTR, while display ads average 0.5-1%. Top-performing campaigns achieve 7-10% CTR through precise targeting, compelling ad copy, and continuous optimization.",
+      meta: {
+        title: "PPC Click-Through Rates 2025 | CTR Benchmarks & Optimization Strategies",
+        description: "PPC CTR benchmarks: Search ads 3-5%, display ads 0.5-1%. Top campaigns achieve 7-10% CTR through targeting, ad copy, and continuous optimization.",
+        keywords: "PPC CTR, click-through rates, ad performance, CTR benchmarks, ad optimization"
+      }
+    },
+    { 
+      question: "Should I run PPC continuously?", 
+      answer: "Yes, continuous campaigns help maintain visibility, collect data, and improve ROI over time through optimization. Consistent PPC presence increases brand recognition by 80% and typically reduces CPA by 15-25% over 6 months due to accumulated data and optimization insights.",
+      meta: {
+        title: "PPC Campaign Duration | Continuous vs Seasonal | Long-term Strategy 2025",
+        description: "PPC campaign duration: Continuous campaigns increase brand recognition by 80% and reduce CPA by 15-25% over 6 months through data accumulation and optimization.",
+        keywords: "PPC campaign duration, continuous advertising, seasonal PPC, long-term strategy, campaign optimization"
+      }
+    },
+    {
+      question: "What's the average ROI for PPC campaigns?",
+      answer: "Average PPC ROI ranges from 200% to 500% depending on industry and optimization. Well-managed campaigns typically achieve $2-5 return for every $1 spent. E-commerce often sees higher ROAS (400-800%), while B2B services average 300-500% ROI with proper lead qualification and nurturing.",
+      meta: {
+        title: "PPC ROI 2025 | Average Return on Ad Spend | Campaign Profitability",
+        description: "PPC ROI averages 200-500%: $2-5 return per $1 spent. E-commerce 400-800% ROAS, B2B services 300-500% ROI with proper lead qualification and nurturing.",
+        keywords: "PPC ROI, return on ad spend, campaign profitability, ROAS, PPC performance"
+      }
+    },
+    {
+      question: "How long does it take to see PPC results?",
+      answer: "Initial PPC results appear within 24-48 hours of campaign launch. Meaningful data for optimization accumulates in 2-4 weeks. Significant ROI and consistent performance typically stabilize within 3-6 months of continuous optimization and testing.",
+      meta: {
+        title: "PPC Results Timeline 2025 | Campaign Performance & Optimization Schedule",
+        description: "PPC results timeline: Initial results in 24-48 hours, meaningful data in 2-4 weeks, consistent ROI in 3-6 months with continuous optimization and testing.",
+        keywords: "PPC results timeline, campaign performance, optimization schedule, PPC timeframe, results duration"
+      }
+    },
+    {
+      question: "Do you manage Facebook Ads and other platforms?",
+      answer: "Yes, we manage comprehensive PPC campaigns across Google Ads, Facebook, Instagram, LinkedIn, Twitter, and Microsoft Advertising. Multi-platform strategies typically increase overall campaign performance by 35-60% through audience diversification and cross-channel retargeting opportunities.",
+      meta: {
+        title: "Multi-Platform PPC Management | Google, Facebook, LinkedIn Ads | 2025 Strategies",
+        description: "Multi-platform PPC management: Google Ads, Facebook, Instagram, LinkedIn, Twitter. Multi-channel strategies increase performance by 35-60% through audience diversification.",
+        keywords: "multi-platform PPC, Facebook Ads, LinkedIn Ads, social media advertising, cross-channel PPC"
+      }
+    }
   ];
 
   const features = [
@@ -70,6 +248,41 @@ const PPCPage = () => {
 
   return (
     <div className="overflow-hidden">
+      {/* Main Page SEO */}
+      <Helmet>
+        <title>{pageMeta.title}</title>
+        <meta name="description" content={pageMeta.description} />
+        <meta name="keywords" content={pageMeta.keywords} />
+        <link rel="canonical" href={pageMeta.canonical} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={pageMeta.title} />
+        <meta property="og:description" content={pageMeta.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageMeta.canonical} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:title" content={pageMeta.title} />
+        <meta name="twitter:description" content={pageMeta.description} />
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "PPC Management Agency",
+            "description": pageMeta.description,
+            "url": pageMeta.canonical,
+            "areaServed": "Worldwide",
+            "serviceType": "PPC Management",
+            "offers": {
+              "@type": "Offer",
+              "description": "PPC Management Services"
+            }
+          })}
+        </script>
+      </Helmet>
+
       {/* Preload critical images */}
       <div className="hidden">
         {preloadImages.map((src, index) => (
@@ -143,7 +356,7 @@ const PPCPage = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
+      {/* Blog Section with Individual SEO */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center space-y-6 mb-12">
@@ -157,78 +370,122 @@ const PPCPage = () => {
             {blogPosts.map((post, index) => {
               const isExpanded = expandedPosts.includes(index);
               return (
-                <Card key={index} className="bg-card border-0 shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="relative w-full aspect-video overflow-hidden">
-                    <img 
-                      src={post.image} 
-                      alt={post.title} 
-                      className="w-full h-full object-cover transition-transform hover:scale-105"
-                      loading="eager"
-                      width={400}
-                      height={250}
-                    />
-                    <Badge variant="secondary" className="absolute top-4 left-4 bg-primary text-primary-foreground">
-                      {post.category}
-                    </Badge>
-                  </div>
+                <div key={index}>
+                  {/* Individual Blog Post SEO */}
+                  {isExpanded && (
+                    <Helmet>
+                      <title>{post.meta.title}</title>
+                      <meta name="description" content={post.meta.description} />
+                      <meta name="keywords" content={post.meta.keywords} />
+                      <meta property="og:title" content={post.meta.title} />
+                      <meta property="og:description" content={post.meta.description} />
+                      <meta property="og:image" content={post.image} />
+                      <meta property="og:type" content="article" />
+                    </Helmet>
+                  )}
                   
-                  <CardHeader>
-                    <CardTitle className="text-xl text-foreground">{post.title}</CardTitle>
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                      <div className="flex items-center space-x-1">
-                        <Calendar className="w-4 h-4"/>
-                        <span>{post.date}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <Clock className="w-4 h-4"/>
-                        <span>{post.readTime}</span>
-                      </div>
+                  <Card className="bg-card border-0 shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div className="relative w-full aspect-video overflow-hidden">
+                      <img 
+                        src={post.image} 
+                        alt={post.title} 
+                        className="w-full h-full object-cover transition-transform hover:scale-105"
+                        loading="eager"
+                        width={400}
+                        height={250}
+                      />
+                      <Badge variant="secondary" className="absolute top-4 left-4 bg-primary text-primary-foreground">
+                        {post.category}
+                      </Badge>
                     </div>
-                  </CardHeader>
-                  
-                  <CardContent className="space-y-4">
-                    <p className="text-muted-foreground">{post.excerpt}</p>
                     
-                    {isExpanded && (
-                      <div className="bg-muted/20 rounded-lg p-6 space-y-4">
-                        {post.fullContent.split("\n\n").map((p,i) => (
-                          <p key={i} className="text-muted-foreground leading-relaxed">{p}</p>
-                        ))}
-                        <ContactPopup 
-                          trigger={
-                            <Button size="sm" className="group">
-                              Get Expert Help
-                              <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1"/>
-                            </Button>
-                          } 
-                          title={`Get Expert Help with ${post.category}`} 
-                          description={`Let's discuss your PPC campaigns for maximum ROI.`}
-                        />
+                    <CardHeader>
+                      <CardTitle className="text-xl text-foreground">{post.title}</CardTitle>
+                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                        <div className="flex items-center space-x-1">
+                          <Calendar className="w-4 h-4"/>
+                          <span>{post.date}</span>
+                        </div>
+                        <div className="flex items-center space-x-1">
+                          <Clock className="w-4 h-4"/>
+                          <span>{post.readTime}</span>
+                        </div>
                       </div>
-                    )}
+                    </CardHeader>
                     
-                    <div className="flex items-center justify-between pt-4 border-t border-border">
-                      <div className="flex items-center space-x-2">
-                        <User className="w-4 h-4 text-muted-foreground"/>
-                        <span className="text-sm text-muted-foreground">PPC Expert</span>
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground">{post.excerpt}</p>
+                      
+                      {isExpanded && (
+                        <div className="bg-muted/20 rounded-lg p-6 space-y-4">
+                          <div className="prose prose-sm max-w-none">
+                            {post.fullContent.split("\n\n").map((p,i) => (
+                              <div key={i}>
+                                {p.startsWith("**") ? (
+                                  <h4 className="font-bold text-foreground mb-3 text-lg">{p.replace(/\*\*/g, '')}</h4>
+                                ) : (
+                                  <p className="text-muted-foreground leading-relaxed">{p}</p>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                          
+                          {/* Blog Post Structured Data */}
+                          <script type="application/ld+json">
+                            {JSON.stringify({
+                              "@context": "https://schema.org",
+                              "@type": "BlogPosting",
+                              "headline": post.title,
+                              "description": post.meta.description,
+                              "image": post.image,
+                              "datePublished": post.date,
+                              "author": {
+                                "@type": "Organization",
+                                "name": "PPC Management Agency"
+                              },
+                              "publisher": {
+                                "@type": "Organization",
+                                "name": "PPC Management Agency"
+                              }
+                            })}
+                          </script>
+                          
+                          <ContactPopup 
+                            trigger={
+                              <Button size="sm" className="group">
+                                Get Expert Help
+                                <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1"/>
+                              </Button>
+                            } 
+                            title={`Get Expert Help with ${post.category}`} 
+                            description={`Let's discuss your PPC campaigns for maximum ROI.`}
+                          />
+                        </div>
+                      )}
+                      
+                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <div className="flex items-center space-x-2">
+                          <User className="w-4 h-4 text-muted-foreground"/>
+                          <span className="text-sm text-muted-foreground">PPC Expert</span>
+                        </div>
+                        <Button variant="outline" size="sm" onClick={() => toggleExpanded(index)}>
+                          {isExpanded ? (
+                            <>Show Less<ChevronUp className="ml-2 w-4 h-4"/></>
+                          ) : (
+                            <>Read More<ChevronDown className="ml-2 w-4 h-4"/></>
+                          )}
+                        </Button>
                       </div>
-                      <Button variant="outline" size="sm" onClick={() => toggleExpanded(index)}>
-                        {isExpanded ? (
-                          <>Show Less<ChevronUp className="ml-2 w-4 h-4"/></>
-                        ) : (
-                          <>Read More<ChevronDown className="ml-2 w-4 h-4"/></>
-                        )}
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Individual SEO */}
       <section className="py-20 bg-background">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="text-center space-y-6 mb-12">
@@ -238,11 +495,62 @@ const PPCPage = () => {
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <Card key={index} className="p-6 border-0 shadow-lg bg-card hover:shadow-xl transition-shadow">
-                <h3 className="font-semibold text-foreground text-lg mb-3">{faq.question}</h3>
-                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-              </Card>
+              <div key={index}>
+                {/* Individual FAQ SEO */}
+                <Helmet>
+                  <title>{faq.meta.title}</title>
+                  <meta name="description" content={faq.meta.description} />
+                  <meta name="keywords" content={faq.meta.keywords} />
+                  <meta property="og:title" content={faq.meta.title} />
+                  <meta property="og:description" content={faq.meta.description} />
+                </Helmet>
+                
+                <Card className="p-6 border-0 shadow-lg bg-card hover:shadow-xl transition-shadow">
+                  <h3 className="font-semibold text-foreground text-lg mb-3">{faq.question}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                  
+                  {/* FAQ Structured Data */}
+                  <script type="application/ld+json">
+                    {JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "FAQPage",
+                      "mainEntity": {
+                        "@type": "Question",
+                        "name": faq.question,
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": faq.answer
+                        }
+                      }
+                    })}
+                  </script>
+                </Card>
+              </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-orange-500 text-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="space-y-4">
+              <div className="text-4xl font-bold">300%</div>
+              <p className="text-lg">Average ROI</p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-4xl font-bold">45%</div>
+              <p className="text-lg">Lower CPA</p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-4xl font-bold">2.8x</div>
+              <p className="text-lg">Higher Conversions</p>
+            </div>
+            <div className="space-y-4">
+              <div className="text-4xl font-bold">24/7</div>
+              <p className="text-lg">Campaign Monitoring</p>
+            </div>
           </div>
         </div>
       </section>

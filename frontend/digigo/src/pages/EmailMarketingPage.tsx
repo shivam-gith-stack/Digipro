@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,14 @@ import { Calendar, Clock, ChevronDown, ChevronUp, User, ArrowRight, TrendingUp, 
 const EmailMarketingPage = () => {
   const [expandedPosts, setExpandedPosts] = useState<number[]>([]);
   const toggleExpanded = (index: number) => setExpandedPosts(prev => prev.includes(index) ? prev.filter(i=>i!==index) : [...prev,index]);
+
+  // Main Page SEO Meta Data
+  const pageMeta = {
+    title: "Email Marketing Agency | $42 ROI Strategy 2025 | #1 Google Ranking",
+    description: "Expert email marketing services delivering $42 ROI per $1 spent. Automation, lead nurturing, and conversion optimization strategies for 2025. Free email audit available.",
+    keywords: "email marketing, email automation, email marketing agency, lead nurturing, email campaigns, marketing automation, ROI optimization, email strategy, conversion rate optimization",
+    canonical: "https://youragency.com/email-marketing"
+  };
 
   // SEO-optimized blog posts for email marketing
   const blogPosts = [
@@ -32,7 +41,12 @@ const EmailMarketingPage = () => {
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=300&fit=crop&auto=format",
       category: "Automation",
       date: "January 20, 2025",
-      readTime: "8 min read"
+      readTime: "8 min read",
+      meta: {
+        title: "Email Marketing Automation Guide 2025 | Boost Conversions 24/7",
+        description: "Complete email marketing automation guide for 2025. Learn AI-powered workflows, behavioral triggers, and strategies to increase conversions automatically.",
+        keywords: "email automation, marketing automation, lead nurturing, behavioral triggers, AI email marketing, conversion optimization"
+      }
     },
     {
       title: "Designing High-Converting Email Campaigns in 2025",
@@ -58,7 +72,12 @@ Test subject lines, sender names, content length, CTA placement, and send times 
       image: "https://images.unsplash.com/photo-1504691342899-36f8fddf0f3e?w=600&h=300&fit=crop&auto=format",
       category: "Design",
       date: "January 18, 2025",
-      readTime: "10 min read"
+      readTime: "10 min read",
+      meta: {
+        title: "High-Converting Email Design 2025 | 26% More Opens | Mobile Optimization",
+        description: "Master high-converting email design with psychological principles, mobile optimization, A/B testing frameworks, and 26% higher open rates.",
+        keywords: "email design, conversion optimization, mobile email, A/B testing, email templates, click-through rates"
+      }
     },
     {
       title: "Email List Building Strategies That Actually Work",
@@ -87,7 +106,12 @@ Test subject lines, sender names, content length, CTA placement, and send times 
       image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=300&fit=crop&auto=format",
       category: "List Building",
       date: "January 15, 2025",
-      readTime: "7 min read"
+      readTime: "7 min read",
+      meta: {
+        title: "Email List Building Strategies 2025 | Quality Subscriber Acquisition",
+        description: "Proven email list building strategies with effective lead magnets, opt-in form optimization, list hygiene, and GDPR compliance for quality growth.",
+        keywords: "email list building, lead magnets, subscriber acquisition, opt-in forms, list growth, email marketing foundation"
+      }
     },
     {
       title: "Email Marketing Metrics That Matter in 2025",
@@ -119,7 +143,12 @@ Test subject lines, sender names, content length, CTA placement, and send times 
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&auto=format",
       category: "Analytics",
       date: "January 12, 2025",
-      readTime: "9 min read"
+      readTime: "9 min read",
+      meta: {
+        title: "Email Marketing Metrics 2025 | Track ROI & Performance KPIs",
+        description: "Essential email marketing metrics for 2025: engagement, deliverability, revenue tracking, and $42 ROI measurement with advanced analytics tools.",
+        keywords: "email metrics, ROI tracking, KPI measurement, email analytics, performance metrics, conversion tracking"
+      }
     },
     {
       title: "GDPR-Compliant Email Marketing Strategies",
@@ -148,7 +177,12 @@ Test subject lines, sender names, content length, CTA placement, and send times 
       image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=300&fit=crop&auto=format",
       category: "Compliance",
       date: "January 10, 2025",
-      readTime: "6 min read"
+      readTime: "6 min read",
+      meta: {
+        title: "GDPR Email Marketing Compliance 2025 | Privacy Regulation Strategies",
+        description: "GDPR-compliant email marketing strategies with explicit consent, data protection, unsubscribe optimization, and compliance implementation checklist.",
+        keywords: "GDPR compliance, email privacy, data protection, CAN-SPAM, consent management, regulatory compliance"
+      }
     },
     {
       title: "AI-Powered Personalization in Email Marketing",
@@ -183,7 +217,12 @@ Test subject lines, sender names, content length, CTA placement, and send times 
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop&auto=format",
       category: "AI & Personalization",
       date: "January 8, 2025",
-      readTime: "8 min read"
+      readTime: "8 min read",
+      meta: {
+        title: "AI Email Personalization 2025 | Hyper-Personalized Campaign Strategies",
+        description: "AI-powered email personalization strategies for 2025: dynamic content, predictive analytics, behavioral triggers, and implementation roadmap for maximum engagement.",
+        keywords: "AI email marketing, personalization, predictive analytics, behavioral triggers, dynamic content, machine learning"
+      }
     }
   ];
 
@@ -191,56 +230,151 @@ Test subject lines, sender names, content length, CTA placement, and send times 
   const faqs = [
     {
       question: "What is the average ROI for email marketing?",
-      answer: "Email marketing has an average ROI of $42 for every $1 spent, making it one of the most cost-effective marketing channels. ROI varies by industry, with e-commerce seeing returns up to $45:$1 and B2B around $35:$1."
+      answer: "Email marketing has an average ROI of $42 for every $1 spent, making it one of the most cost-effective marketing channels. ROI varies by industry, with e-commerce seeing returns up to $45:$1 and B2B around $35:$1.",
+      meta: {
+        title: "Email Marketing ROI 2025 | $42 Average Return Per $1 Spent | Cost-Effective",
+        description: "Email marketing delivers $42 average ROI per $1 spent. Industry-specific returns: e-commerce $45:$1, B2B $35:$1. Most cost-effective marketing channel available.",
+        keywords: "email marketing ROI, return on investment, cost-effective marketing, $42 ROI, email campaign returns"
+      }
     },
     {
       question: "How often should I send marketing emails?",
-      answer: "Optimal frequency depends on your audience and content. Generally, 1-2 times per week for newsletters, daily for promotional campaigns, and triggered emails based on user behavior. Monitor engagement metrics and adjust based on subscriber feedback."
+      answer: "Optimal frequency depends on your audience and content. Generally, 1-2 times per week for newsletters, daily for promotional campaigns, and triggered emails based on user behavior. Monitor engagement metrics and adjust based on subscriber feedback.",
+      meta: {
+        title: "Email Marketing Frequency 2025 | Optimal Send Times & Best Practices",
+        description: "Optimal email marketing frequency: 1-2 weekly newsletters, daily promotions, behavioral triggers. Monitor engagement metrics for perfect timing strategy.",
+        keywords: "email frequency, send times, engagement optimization, newsletter timing, promotional emails"
+      }
     },
     {
       question: "What's a good open rate for email campaigns?",
-      answer: "Industry averages range from 20-30%. B2B campaigns average 15-25%, while B2C typically sees 20-35%. Factors affecting open rates include subject line quality, sender reputation, list quality, and audience relevance."
+      answer: "Industry averages range from 20-30%. B2B campaigns average 15-25%, while B2C typically sees 20-35%. Factors affecting open rates include subject line quality, sender reputation, list quality, and audience relevance.",
+      meta: {
+        title: "Email Open Rate Benchmarks 2025 | 20-30% Industry Average | B2B vs B2C",
+        description: "Email open rate benchmarks: 20-30% industry average, B2B 15-25%, B2C 20-35%. Factors: subject lines, sender reputation, list quality, audience relevance.",
+        keywords: "email open rates, benchmark metrics, B2B email, B2C email, subject line optimization"
+      }
     },
     {
       question: "How can I improve my email deliverability?",
-      answer: "Maintain list hygiene, use double opt-in, authenticate your domain (SPF, DKIM, DMARC), avoid spam triggers, monitor sender reputation, segment your list, and regularly clean inactive subscribers."
+      answer: "Maintain list hygiene, use double opt-in, authenticate your domain (SPF, DKIM, DMARC), avoid spam triggers, monitor sender reputation, segment your list, and regularly clean inactive subscribers.",
+      meta: {
+        title: "Email Deliverability Improvement 2025 | Inbox Placement Strategies",
+        description: "Improve email deliverability with list hygiene, double opt-in, domain authentication, spam trigger avoidance, sender reputation monitoring, and list segmentation.",
+        keywords: "email deliverability, inbox placement, spam prevention, sender reputation, domain authentication"
+      }
     },
     {
       question: "What's the best time to send marketing emails?",
-      answer: "Generally, Tuesday-Thursday between 9-11 AM local time. However, test with your audience. B2B performs best during business hours, while B2C sees higher engagement evenings and weekends."
+      answer: "Generally, Tuesday-Thursday between 9-11 AM local time. However, test with your audience. B2B performs best during business hours, while B2C sees higher engagement evenings and weekends.",
+      meta: {
+        title: "Best Time to Send Emails 2025 | Tuesday-Thursday 9-11 AM Optimization",
+        description: "Best email send times: Tuesday-Thursday 9-11 AM local time. B2B: business hours, B2C: evenings/weekends. Audience testing recommended for optimal timing.",
+        keywords: "email send times, optimal timing, B2B email, B2C email, engagement optimization"
+      }
     },
     {
       question: "How do I build an email list from scratch?",
-      answer: "Create valuable lead magnets, optimize website opt-in forms, use social media promotions, host webinars, run contests, collaborate with influencers, and leverage content upgrades in blog posts."
+      answer: "Create valuable lead magnets, optimize website opt-in forms, use social media promotions, host webinars, run contests, collaborate with influencers, and leverage content upgrades in blog posts.",
+      meta: {
+        title: "Email List Building from Scratch 2025 | Lead Magnets & Growth Strategies",
+        description: "Build email list from scratch with lead magnets, opt-in form optimization, social media promotions, webinars, contests, influencer collaborations, and content upgrades.",
+        keywords: "email list building, lead magnets, subscriber growth, opt-in forms, list acquisition"
+      }
     },
     {
       question: "What's the difference between cold email and marketing email?",
-      answer: "Cold email is unsolicited outreach to prospects, requiring careful compliance. Marketing email goes to subscribers who opted in. Cold email focuses on lead generation, while marketing email nurtures existing relationships."
+      answer: "Cold email is unsolicited outreach to prospects, requiring careful compliance. Marketing email goes to subscribers who opted in. Cold email focuses on lead generation, while marketing email nurtures existing relationships.",
+      meta: {
+        title: "Cold Email vs Marketing Email 2025 | Compliance & Strategy Differences",
+        description: "Cold email: unsolicited outreach with compliance requirements. Marketing email: opted-in subscribers for relationship nurturing. Different goals and strategies for each.",
+        keywords: "cold email, marketing email, lead generation, email compliance, outreach strategies"
+      }
     },
     {
       question: "How can I reduce my email unsubscribe rate?",
-      answer: "Set clear expectations during sign-up, segment your audience, provide valuable content, optimize send frequency, allow subscribers to choose email types, and regularly survey your audience about preferences."
+      answer: "Set clear expectations during sign-up, segment your audience, provide valuable content, optimize send frequency, allow subscribers to choose email types, and regularly survey your audience about preferences.",
+      meta: {
+        title: "Reduce Email Unsubscribe Rate 2025 | Retention & Engagement Strategies",
+        description: "Reduce email unsubscribe rates with clear expectations, audience segmentation, valuable content, frequency optimization, preference centers, and regular surveys.",
+        keywords: "unsubscribe rate, email retention, subscriber engagement, list management, churn reduction"
+      }
     },
     {
       question: "What are the best email marketing platforms?",
-      answer: "Top platforms include HubSpot (all-in-one), Mailchimp (ease of use), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), and Sendinblue (affordable). Choose based on your budget and needs."
+      answer: "Top platforms include HubSpot (all-in-one), Mailchimp (ease of use), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), and Sendinblue (affordable). Choose based on your budget and needs.",
+      meta: {
+        title: "Best Email Marketing Platforms 2025 | HubSpot, Mailchimp, Klaviyo Comparison",
+        description: "Top email marketing platforms: HubSpot (all-in-one), Mailchimp (user-friendly), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), Sendinblue (affordable).",
+        keywords: "email marketing platforms, HubSpot, Mailchimp, Klaviyo, ActiveCampaign, software comparison"
+      }
     },
     {
       question: "How do I write email subject lines that get opens?",
-      answer: "Keep under 50 characters, create urgency or curiosity, personalize when possible, avoid spam words, ask questions, use emojis strategically, and A/B test different approaches."
+      answer: "Keep under 50 characters, create urgency or curiosity, personalize when possible, avoid spam words, ask questions, use emojis strategically, and A/B test different approaches.",
+      meta: {
+        title: "Email Subject Line Writing 2025 | 50 Characters, Urgency, Personalization",
+        description: "Write email subject lines that get opens: under 50 characters, urgency/curiosity creation, personalization, spam word avoidance, questions, emojis, A/B testing.",
+        keywords: "email subject lines, open rate optimization, A/B testing, personalization, spam avoidance"
+      }
     },
     {
       question: "What is email segmentation and why is it important?",
-      answer: "Segmentation divides your list into groups based on demographics, behavior, or preferences. It increases relevance, improves engagement (14-30% higher open rates), and boosts conversions by sending targeted content."
+      answer: "Segmentation divides your list into groups based on demographics, behavior, or preferences. It increases relevance, improves engagement (14-30% higher open rates), and boosts conversions by sending targeted content.",
+      meta: {
+        title: "Email Segmentation Importance 2025 | 14-30% Higher Open Rates | Targeting",
+        description: "Email segmentation divides lists by demographics, behavior, preferences. Increases relevance, improves engagement (14-30% higher opens), boosts conversions with targeted content.",
+        keywords: "email segmentation, list targeting, personalized content, engagement improvement, conversion optimization"
+      }
     },
     {
       question: "How can I make my emails mobile-friendly?",
-      answer: "Use responsive design, single-column layouts, large CTAs (min 44px), concise copy, optimized images, legible fonts (16px+), and test on various devices and email clients."
+      answer: "Use responsive design, single-column layouts, large CTAs (min 44px), concise copy, optimized images, legible fonts (16px+), and test on various devices and email clients.",
+      meta: {
+        title: "Mobile-Friendly Email Design 2025 | 60% Mobile Opens | Responsive Optimization",
+        description: "Create mobile-friendly emails with responsive design, single-column layouts, large CTAs (44px+), concise copy, optimized images, legible fonts (16px+), multi-device testing.",
+        keywords: "mobile email, responsive design, mobile optimization, email clients, mobile CTAs"
+      }
     }
   ];
 
   return (
     <div className="overflow-hidden">
+      {/* Main Page SEO */}
+      <Helmet>
+        <title>{pageMeta.title}</title>
+        <meta name="description" content={pageMeta.description} />
+        <meta name="keywords" content={pageMeta.keywords} />
+        <link rel="canonical" href={pageMeta.canonical} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={pageMeta.title} />
+        <meta property="og:description" content={pageMeta.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageMeta.canonical} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:title" content={pageMeta.title} />
+        <meta name="twitter:description" content={pageMeta.description} />
+        
+        {/* Structured Data for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Email Marketing Agency",
+            "description": pageMeta.description,
+            "url": pageMeta.canonical,
+            "areaServed": "Worldwide",
+            "serviceType": "Email Marketing",
+            "offers": {
+              "@type": "Offer",
+              "description": "Email Marketing Services"
+            }
+          })}
+        </script>
+      </Helmet>
+
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 text-white py-20 lg:py-32 text-center max-w-4xl mx-auto px-4">
         <Badge variant="secondary" className="bg-white/20 text-white border-white/30 inline-flex items-center mb-4">
@@ -335,7 +469,7 @@ Test subject lines, sender names, content length, CTA placement, and send times 
         </div>
       </section>
 
-      {/* Blog Section */}
+      {/* Blog Section with Individual SEO */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto max-w-6xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Email Marketing Insights & Strategies</h2>
@@ -345,72 +479,108 @@ Test subject lines, sender names, content length, CTA placement, and send times 
             {blogPosts.map((post,index)=>{
               const isExpanded = expandedPosts.includes(index);
               return (
-                <Card key={index} className="bg-white border-0 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="aspect-video bg-gray-200 relative overflow-hidden">
-                    <img 
-                      src={post.image} 
-                      alt={post.title} 
-                      className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                      loading="lazy"
-                    />
-                    <Badge variant="secondary" className="absolute top-4 left-4 bg-blue-600 text-white">{post.category}</Badge>
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-lg text-gray-900 line-clamp-2">{post.title}</CardTitle>
-                    <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <div className="flex items-center space-x-1"><Calendar className="w-4 h-4"/><span>{post.date}</span></div>
-                      <div className="flex items-center space-x-1"><Clock className="w-4 h-4"/><span>{post.readTime}</span></div>
+                <div key={index}>
+                  {/* Individual Blog Post SEO */}
+                  {isExpanded && (
+                    <Helmet>
+                      <title>{post.meta.title}</title>
+                      <meta name="description" content={post.meta.description} />
+                      <meta name="keywords" content={post.meta.keywords} />
+                      <meta property="og:title" content={post.meta.title} />
+                      <meta property="og:description" content={post.meta.description} />
+                      <meta property="og:image" content={post.image} />
+                      <meta property="og:type" content="article" />
+                    </Helmet>
+                  )}
+                  
+                  <Card className="bg-white border-0 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div className="aspect-video bg-gray-200 relative overflow-hidden">
+                      <img 
+                        src={post.image} 
+                        alt={post.title} 
+                        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                        loading="lazy"
+                      />
+                      <Badge variant="secondary" className="absolute top-4 left-4 bg-blue-600 text-white">{post.category}</Badge>
                     </div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
-                    {isExpanded && (
-                      <div className="bg-blue-50 rounded-lg p-6 space-y-4">
-                        <div className="prose prose-sm max-w-none">
-                          {post.fullContent.split("\n\n").map((p,i) => (
-                            <div key={i}>
-                              {p.startsWith("**") ? (
-                                <strong className="text-gray-900">{p.replace(/\*\*/g, '')}</strong>
-                              ) : (
-                                <p className="text-gray-700 leading-relaxed">{p}</p>
-                              )}
-                            </div>
-                          ))}
+                    <CardHeader>
+                      <CardTitle className="text-lg text-gray-900 line-clamp-2">{post.title}</CardTitle>
+                      <div className="flex items-center space-x-4 text-sm text-gray-500">
+                        <div className="flex items-center space-x-1"><Calendar className="w-4 h-4"/><span>{post.date}</span></div>
+                        <div className="flex items-center space-x-1"><Clock className="w-4 h-4"/><span>{post.readTime}</span></div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-gray-600 line-clamp-3">{post.excerpt}</p>
+                      {isExpanded && (
+                        <div className="bg-blue-50 rounded-lg p-6 space-y-4">
+                          <div className="prose prose-sm max-w-none">
+                            {post.fullContent.split("\n\n").map((p,i) => (
+                              <div key={i}>
+                                {p.startsWith("**") ? (
+                                  <strong className="text-gray-900">{p.replace(/\*\*/g, '')}</strong>
+                                ) : (
+                                  <p className="text-gray-700 leading-relaxed">{p}</p>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                          
+                          {/* Blog Post Structured Data */}
+                          <script type="application/ld+json">
+                            {JSON.stringify({
+                              "@context": "https://schema.org",
+                              "@type": "BlogPosting",
+                              "headline": post.title,
+                              "description": post.meta.description,
+                              "image": post.image,
+                              "datePublished": post.date,
+                              "author": {
+                                "@type": "Organization",
+                                "name": "Email Marketing Agency"
+                              },
+                              "publisher": {
+                                "@type": "Organization",
+                                "name": "Email Marketing Agency"
+                              }
+                            })}
+                          </script>
+                          
+                          <ContactPopup 
+                            trigger={
+                              <Button size="sm" className="group w-full bg-blue-600 hover:bg-blue-700">
+                                Get Email Strategy
+                                <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1"/>
+                              </Button>
+                            } 
+                            title={`Get Expert Help with ${post.category}`} 
+                            description={`Let's discuss your email marketing strategy.`}
+                          />
                         </div>
-                        <ContactPopup 
-                          trigger={
-                            <Button size="sm" className="group w-full bg-blue-600 hover:bg-blue-700">
-                              Get Email Strategy
-                              <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1"/>
-                            </Button>
-                          } 
-                          title={`Get Expert Help with ${post.category}`} 
-                          description={`Let's discuss your email marketing strategy.`}
-                        />
+                      )}
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                        <div className="flex items-center space-x-2">
+                          <User className="w-4 h-4 text-gray-500"/>
+                          <span className="text-sm text-gray-500">Email Expert</span>
+                        </div>
+                        <Button variant="outline" size="sm" onClick={()=>toggleExpanded(index)} className="border-gray-300">
+                          {isExpanded ? (
+                            <>Show Less<ChevronUp className="ml-2 w-4 h-4"/></>
+                          ) : (
+                            <>Read More<ChevronDown className="ml-2 w-4 h-4"/></>
+                          )}
+                        </Button>
                       </div>
-                    )}
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                      <div className="flex items-center space-x-2">
-                        <User className="w-4 h-4 text-gray-500"/>
-                        <span className="text-sm text-gray-500">Email Expert</span>
-                      </div>
-                      <Button variant="outline" size="sm" onClick={()=>toggleExpanded(index)} className="border-gray-300">
-                        {isExpanded ? (
-                          <>Show Less<ChevronUp className="ml-2 w-4 h-4"/></>
-                        ) : (
-                          <>Read More<ChevronDown className="ml-2 w-4 h-4"/></>
-                        )}
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ Section with Individual SEO */}
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Email Marketing FAQs</h2>
@@ -418,10 +588,37 @@ Test subject lines, sender names, content length, CTA placement, and send times 
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {faqs.map((faq,index)=>(
-              <Card key={index} className="p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 className="font-semibold text-gray-900 mb-3 text-lg">{faq.question}</h3>
-                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-              </Card>
+              <div key={index}>
+                {/* Individual FAQ SEO */}
+                <Helmet>
+                  <title>{faq.meta.title}</title>
+                  <meta name="description" content={faq.meta.description} />
+                  <meta name="keywords" content={faq.meta.keywords} />
+                  <meta property="og:title" content={faq.meta.title} />
+                  <meta property="og:description" content={faq.meta.description} />
+                </Helmet>
+                
+                <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <h3 className="font-semibold text-gray-900 mb-3 text-lg">{faq.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  
+                  {/* FAQ Structured Data */}
+                  <script type="application/ld+json">
+                    {JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "FAQPage",
+                      "mainEntity": {
+                        "@type": "Question",
+                        "name": faq.question,
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": faq.answer
+                        }
+                      }
+                    })}
+                  </script>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
