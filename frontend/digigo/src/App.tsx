@@ -1,4 +1,5 @@
-import { Toaster } from "@/components/ui/toaster";
+import { HelmetProvider } from "react-helmet-async";
+// import { Toaster } from "@/components/ui/toaster";
 // import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -24,31 +25,36 @@ import EcommerceMarketing from "./pages/EcommerceMarketing"
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    {/* <Sonner /> */}
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/web-development" element={<WebDevelopmentPage />} />
-          <Route path="/seo" element={<SEOServicesPage />} />
-          <Route path="/ppc" element={<PPCServicesPage />} />
-          <Route path="/social-media" element={<SocialMediaPage />} />
-          <Route path="/content-marketing" element={<ContentMarketingPage />} />
-          <Route path="/email-marketing" element={<EmailMarketingPage />} />
-          <Route path="/ecommerce-marketing" element={<EcommerceMarketing />} />
-          <Route path="/portfolio" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          {/* Catch-all route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        {/* <Sonner /> */}
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/web-development" element={<WebDevelopmentPage />} />
+              <Route path="/seo" element={<SEOServicesPage />} />
+              <Route path="/ppc" element={<PPCServicesPage />} />
+              <Route path="/social-media" element={<SocialMediaPage />} />
+              <Route path="/content-marketing" element={<ContentMarketingPage />} />
+              <Route path="/email-marketing" element={<EmailMarketingPage />} />
+              <Route path="/ecommerce-marketing" element={<EcommerceMarketing />} />
+              <Route path="/portfolio" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              {/* Catch-all route */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+        {/* <Toaster /> */}
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
