@@ -45,7 +45,7 @@ const Services = () => {
     title: "Digital Marketing Services Agency | SEO, PPC, Social Media 2025 | #1 Google Ranking",
     description: "Complete digital marketing services: SEO, PPC, social media, web design, e-commerce marketing. 300% ROI guarantee. Free audit and consultation available.",
     keywords: "digital marketing services, SEO agency, PPC management, social media marketing, web design, e-commerce marketing, content marketing, email marketing, digital agency",
-    canonical: "https://youragency.com/services"
+    canonical: "https://lumivexgrowth.in/services"
   };
 
   const services = [

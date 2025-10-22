@@ -180,7 +180,7 @@ const Contact = () => {
         <meta property="og:title" content="Free Digital Marketing Audit & Consultation - Get Expert Help" />
         <meta property="og:description" content="Transform your online presence with expert digital marketing strategies. Free audit & consultation. 500% average ROI guaranteed." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourwebsite.com/contact" />
+        <link rel="canonical" href="https://lumivexgrowth.in/contact" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

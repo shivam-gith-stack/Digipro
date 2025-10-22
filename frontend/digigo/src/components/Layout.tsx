@@ -28,13 +28,13 @@ const Layout = ({ children }: LayoutProps) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://lumivexgrowth.com" />
+        <link rel="canonical" href="https://lumivexgrowth.in" />
         
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="LumivexGrowth - Digital Marketing Agency | SEO & PPC Experts" />
         <meta property="og:description" content="Expert digital marketing agency offering SEO, PPC, social media marketing services. 500% average ROI, 200+ successful campaigns." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lumivexgrowth.com" />
+        <meta property="og:url" content="https://lumivexgrowth.in" />
         <meta property="og:site_name" content="LumivexGrowth" />
         
         {/* Twitter Meta Tags */}
@@ -57,7 +57,7 @@ const Layout = ({ children }: LayoutProps) => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "LumivexGrowth Digital Marketing Agency",
-            "url": "https://lumivexgrowth.com",
+            "url": "https://lumivexgrowth.in",
             "description": "Expert digital marketing services including SEO, PPC, social media marketing, and web development.",
             "address": {
               "@type": "PostalAddress",

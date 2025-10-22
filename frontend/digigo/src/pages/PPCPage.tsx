@@ -19,7 +19,7 @@ const PPCPage = () => {
     title: "PPC Management Agency | Google Ads Experts 2025 | Maximize ROI & Conversions",
     description: "Expert PPC management services delivering 300% ROI. Google Ads, Facebook Ads, and paid search campaign optimization. Free PPC audit and consultation available.",
     keywords: "PPC management, Google Ads, paid search, PPC agency, Facebook Ads, pay-per-click, ad campaign management, ROI optimization, conversion rate optimization",
-    canonical: "https://youragency.com/ppc-management"
+    canonical: "https://lumivexgrowth.in/ppc"
   };
 
   // Optimized PPC-related images with WebP format and preloading

@@ -18,7 +18,7 @@ const ContentMarketingPage = () => {
     title: "Content Marketing Agency | Boost Engagement & ROI 2025 | #1 Google Ranking",
     description: "Expert content marketing services that drive traffic, increase engagement, and generate leads. SEO-optimized content strategy, blog writing, video production, and social media content.",
     keywords: "content marketing, content strategy, blog writing, video marketing, SEO content, social media content, content creation, digital marketing, lead generation, content marketing agency",
-    canonical: "https://youragency.com/content-marketing"
+    canonical: "https://lumivexgrowth.in/content-marketing"
   };
 
   const blogPosts = [

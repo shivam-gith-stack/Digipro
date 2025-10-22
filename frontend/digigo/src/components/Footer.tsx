@@ -59,8 +59,8 @@ const Footer = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "LumivexGrowth Digital Marketing",
-            "url": "https://lumivexgrowth.com",
-            "logo": "https://lumivexgrowth.com/logo.png",
+            "url": "https://lumivexgrowth.in",
+            "logo": "https://lumivexgrowth.in/logo.png",
             "description": "Results-driven digital marketing agency helping businesses achieve 500% ROI increases through strategic SEO, PPC, and social media marketing campaigns.",
             "address": {
               "@type": "PostalAddress",

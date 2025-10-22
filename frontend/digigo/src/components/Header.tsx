@@ -87,10 +87,10 @@ const Header = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "LumivexGrowth Digital Marketing",
-            "url": "https://lumivexgrowth.com",
+            "url": "https://lumivexgrowth.in",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://lumivexgrowth.com/search?q={search_term_string}",
+              "target": "https://lumivexgrowth.in/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })}
@@ -102,8 +102,8 @@ const Header = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "LumivexGrowth Digital Marketing Agency",
-            "url": "https://lumivexgrowth.com",
-            "logo": "https://lumivexgrowth.com/logo.png",
+            "url": "https://lumivexgrowth.in",
+            "logo": "https://lumivexgrowth.in/logo.png",
             "description": "Expert digital marketing services including SEO, PPC, social media marketing, and web development.",
             "sameAs": [
               "https://facebook.com/lumivexgrowth",

@@ -49,7 +49,7 @@ const EcommerceMarketing = () => {
     title: "E-commerce Marketing Agency | Boost Sales & ROI 2025 | #1 Google Ranking",
     description: "Expert e-commerce marketing services that drive sales, increase ROI, and grow your online store. SEO, PPC, social media, email marketing & CRO strategies.",
     keywords: "e-commerce marketing, online store marketing, ecommerce SEO, Google Shopping ads, social media marketing, email marketing, conversion rate optimization, ROI increase, sales growth, digital marketing agency",
-    canonical: "https://youragency.com/ecommerce-marketing"
+    canonical: "https://lumivexgrowth.in/ecommerce-marketing"
   };
 
   const faqs = [

@@ -38,7 +38,7 @@ const SEOPage = () => {
     title: "SEO Services Agency | Rank #1 on Google 2025 | Local & Technical SEO Experts",
     description: "Expert SEO services that drive 89% more organic traffic. Local SEO, technical SEO, content strategy, and link building. Free SEO audit and consultation available.",
     keywords: "SEO services, search engine optimization, local SEO, technical SEO, Google ranking, organic traffic, SEO agency, keyword research, backlink building, SEO audit",
-    canonical: "https://youragency.com/seo-services"
+    canonical: "https://lumivexgrowth.in/seo"
   };
 
   // Optimized SEO-related images with fast loading

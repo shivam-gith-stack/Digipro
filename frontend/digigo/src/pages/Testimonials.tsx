@@ -239,8 +239,8 @@ const Testimonials = () => {
         <meta property="og:title" content="Client Testimonials & Success Stories - 500% ROI Proven Results" />
         <meta property="og:description" content="See how 50+ businesses achieved remarkable growth with our digital marketing services. Real client testimonials and verified results." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourwebsite.com/testimonials-og-image.jpg" />
-        <link rel="canonical" href="https://yourwebsite.com/testimonials" />
+        <meta property="og:image" content="https://lumivexgrowth.in/testimonials-og-image.jpg" />
+        <link rel="canonical" href="https://lumivexgrowth.in/testimonials" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
