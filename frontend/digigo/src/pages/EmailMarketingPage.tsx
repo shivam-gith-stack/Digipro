@@ -16,7 +16,7 @@ const EmailMarketingPage = () => {
     title: "Email Marketing Agency | $42 ROI Strategy 2025 | #1 Google Ranking",
     description: "Expert email marketing services delivering $42 ROI per $1 spent. Automation, lead nurturing, and conversion optimization strategies for 2025. Free email audit available.",
     keywords: "email marketing, email automation, email marketing agency, lead nurturing, email campaigns, marketing automation, ROI optimization, email strategy, conversion rate optimization",
-    canonical: "https://youragency.com/email-marketing"
+    canonical: "https://lumivexgrowth.in/email-marketing"
   };
 
   // SEO-optimized blog posts for email marketing

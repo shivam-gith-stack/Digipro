@@ -16,7 +16,7 @@ const SocialMediaPage = () => {
     title: "Social Media Marketing Agency | 250% Engagement Increase 2025 | #1 Google Ranking",
     description: "Expert social media marketing services: content strategy, community management, paid advertising. 250% engagement increase, 4.9B+ users reached. Free audit available.",
     keywords: "social media marketing, social media management, content strategy, community management, social media advertising, Instagram marketing, Facebook marketing, TikTok marketing, LinkedIn marketing",
-    canonical: "https://youragency.com/social-media-marketing"
+    canonical: "https://lumivexgrowth.in/social-media"
   };
 
   // SEO-optimized blog posts based on most searched topics

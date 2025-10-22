@@ -47,7 +47,7 @@ const WebDevelopment = () => {
     title: "Web Development Agency | Custom Websites & Apps 2025 | #1 Google Ranking",
     description: "Expert web development services: custom websites, web applications, e-commerce solutions. 150+ websites launched, 98% client satisfaction. Free consultation available.",
     keywords: "web development, custom website development, web application development, e-commerce development, responsive web design, progressive web apps, web development agency, website development services",
-    canonical: "https://youragency.com/web-development"
+    canonical: "https://lumivexgrowth.in/web-development"
   };
 
   const services = [

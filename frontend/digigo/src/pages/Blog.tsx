@@ -114,7 +114,7 @@ Businesses using AI see better engagement, more precise customer journeys, and s
         <meta property="og:title" content="Digital Marketing Blog - Expert Strategies & Insights 2024" />
         <meta property="og:description" content="Latest digital marketing tips, SEO strategies, and growth hacking techniques from industry experts." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourwebsite.com/blog" />
+        <link rel="canonical" href="https://lumivexgrowth.in/blog" />
       </Helmet>
 
       {/* Hero Section */}

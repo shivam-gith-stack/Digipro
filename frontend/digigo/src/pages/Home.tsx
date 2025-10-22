@@ -188,30 +188,66 @@ const Home = () => {
         <meta property="og:title" content="Digital Marketing Agency | 500% ROI Guaranteed - SEO & PPC Experts" />
         <meta property="og:description" content="Get proven digital marketing results with our expert SEO, PPC, and social media services. 500% average ROI. Free strategy session available." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
-        <link rel="canonical" href="https://yourwebsite.com" />
+        <meta property="og:image" content="https://https://lumivexgrowth.in/og-image.jpg" />
+        <link rel="canonical" href="https://lumivexgrowth.in/" />
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "DigitalMarketingAgency",
-            "name": "Digital Marketing Pro",
-            "description": "Professional digital marketing services including SEO, PPC, social media marketing, and web development",
-            "url": "https://yourwebsite.com",
-            "telephone": "+91-9702845312",
-            "email": "shivam.gupta14083110@gmail.com",
-            "areaServed": ["India", "United States", "Canada", "United Kingdom", "Australia"],
-            "serviceType": "Digital Marketing Services",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "ratingCount": "50"
-            },
-            "offers": {
-              "@type": "Offer",
-              "description": "Digital Marketing Services"
-            }
-          })}
-        </script>
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "name": "Lumivex Growth",
+  "url": "https://lumivexgrowth.in/",
+  "logo": "https://lumivexgrowth.in/logo.png",
+  "image": "https://lumivexgrowth.in/logo.png",
+  "description": "Lumivex Growth is a digital marketing agency in Mumbai offering SEO, Google Ads, and social media marketing — 100% remote services for startups and enterprises.",
+  "email": "shivam.gupta14083110@gmail.com",
+  "telephone": "+91-9702845312",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mumbai",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Shivam Gupta"
+  },
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://www.facebook.com/lumivexgrowth",
+    "https://www.instagram.com/lumivexgrowth",
+    "https://www.linkedin.com/company/lumivexgrowth"
+  ],
+  "serviceType": ["SEO Service", "Digital Marketing Service", "Google Ads Management", "Social Media Marketing"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "27"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Rohit Sharma"
+      },
+      "datePublished": "2025-10-10",
+      "reviewBody": "Lumivex Growth helped us grow organic leads by 200% through SEO and paid marketing campaigns. Highly professional remote team.",
+      "name": "Excellent Digital Marketing Services",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "SEO and Google Ads Management",
+        "serviceType": "Digital Marketing Service"
+      }
+    }
+  ]
+}
+</script>
+
       </Helmet>
 
       {/* Hero Section */}

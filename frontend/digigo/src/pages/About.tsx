@@ -28,7 +28,7 @@ const About = () => {
     title: "Digital Marketing Expert | 10+ Years Experience | 500% Average ROI | Certified Pro",
     description: "Certified digital marketing expert with 10+ years experience delivering 500% average ROI. Google, Facebook, HubSpot certified. Free consultation available.",
     keywords: "digital marketing expert, certified marketer, Google Ads certified, Facebook marketing expert, SEO specialist, PPC expert, marketing consultant",
-    canonical: "https://youragency.com/about"
+    canonical: "https://lumivexgrowth.in/about"
   };
 
   const certifications = [
