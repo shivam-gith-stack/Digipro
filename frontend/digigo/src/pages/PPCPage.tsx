@@ -158,75 +158,35 @@ Landing pages are critical for converting clicks into customers. Use clear CTAs,
   const faqs = [
     { 
       question: "How much should I spend on Google Ads?", 
-      answer: "Ad spend depends on your business goals, industry, and competition. Start with a test budget of $1,000-$2,000 monthly, then scale based on performance. Most businesses achieve positive ROI with monthly budgets of $2,500-$10,000. We recommend allocating 7-12% of projected revenue to PPC for optimal growth.",
-      meta: {
-        title: "Google Ads Budget 2025 | How Much to Spend on PPC | ROI Optimization",
-        description: "Google Ads budget recommendations: Start with $1,000-$2,000 monthly, scale to $2,500-$10,000. Allocate 7-12% of revenue for optimal PPC ROI and growth.",
-        keywords: "Google Ads budget, PPC spending, ad spend recommendations, ROI optimization, campaign budget"
-      }
+      answer: "Ad spend depends on your business goals, industry, and competition. Start with a test budget of $1,000-$2,000 monthly, then scale based on performance. Most businesses achieve positive ROI with monthly budgets of $2,500-$10,000. We recommend allocating 7-12% of projected revenue to PPC for optimal growth."
     },
     { 
       question: "Can PPC replace SEO?", 
-      answer: "No. PPC delivers immediate traffic, but SEO builds long-term organic visibility. A combined strategy yields the best results. PPC provides instant testing data for SEO keywords, while SEO reduces long-term customer acquisition costs. Businesses using both channels see 25% higher conversion rates and 30% lower overall marketing costs.",
-      meta: {
-        title: "PPC vs SEO 2025 | Paid vs Organic Search | Integrated Digital Marketing",
-        description: "PPC vs SEO: PPC delivers immediate traffic, SEO builds long-term visibility. Combined strategy increases conversions by 25% and reduces costs by 30%.",
-        keywords: "PPC vs SEO, paid vs organic search, digital marketing strategy, integrated campaigns, SEO and PPC"
-      }
+      answer: "No. PPC delivers immediate traffic, but SEO builds long-term organic visibility. A combined strategy yields the best results. PPC provides instant testing data for SEO keywords, while SEO reduces long-term customer acquisition costs. Businesses using both channels see 25% higher conversion rates and 30% lower overall marketing costs."
     },
     { 
       question: "How do I track conversions effectively?", 
-      answer: "Use Google Ads conversion tracking, Google Analytics, and proper landing page tracking to measure performance accurately. Implement Google Tag Manager for advanced tracking, set up conversion goals, track micro-conversions, and use UTM parameters for campaign attribution. Proper tracking typically reveals 20-30% more conversions than basic setup.",
-      meta: {
-        title: "PPC Conversion Tracking 2025 | Google Ads & Analytics Setup | Performance Measurement",
-        description: "Effective PPC conversion tracking: Google Ads conversion tracking, Google Analytics, Tag Manager, UTM parameters, and advanced attribution for accurate performance measurement.",
-        keywords: "PPC conversion tracking, Google Ads tracking, analytics setup, conversion measurement, campaign attribution"
-      }
+      answer: "Use Google Ads conversion tracking, Google Analytics, and proper landing page tracking to measure performance accurately. Implement Google Tag Manager for advanced tracking, set up conversion goals, track micro-conversions, and use UTM parameters for campaign attribution. Proper tracking typically reveals 20-30% more conversions than basic setup."
     },
     { 
       question: "What is a good CTR for PPC?", 
-      answer: "A typical CTR ranges from 2% to 5% depending on industry. Higher CTR usually indicates better ad relevance and targeting. Search ads average 3-5% CTR, while display ads average 0.5-1%. Top-performing campaigns achieve 7-10% CTR through precise targeting, compelling ad copy, and continuous optimization.",
-      meta: {
-        title: "PPC Click-Through Rates 2025 | CTR Benchmarks & Optimization Strategies",
-        description: "PPC CTR benchmarks: Search ads 3-5%, display ads 0.5-1%. Top campaigns achieve 7-10% CTR through targeting, ad copy, and continuous optimization.",
-        keywords: "PPC CTR, click-through rates, ad performance, CTR benchmarks, ad optimization"
-      }
+      answer: "A typical CTR ranges from 2% to 5% depending on industry. Higher CTR usually indicates better ad relevance and targeting. Search ads average 3-5% CTR, while display ads average 0.5-1%. Top-performing campaigns achieve 7-10% CTR through precise targeting, compelling ad copy, and continuous optimization."
     },
     { 
       question: "Should I run PPC continuously?", 
-      answer: "Yes, continuous campaigns help maintain visibility, collect data, and improve ROI over time through optimization. Consistent PPC presence increases brand recognition by 80% and typically reduces CPA by 15-25% over 6 months due to accumulated data and optimization insights.",
-      meta: {
-        title: "PPC Campaign Duration | Continuous vs Seasonal | Long-term Strategy 2025",
-        description: "PPC campaign duration: Continuous campaigns increase brand recognition by 80% and reduce CPA by 15-25% over 6 months through data accumulation and optimization.",
-        keywords: "PPC campaign duration, continuous advertising, seasonal PPC, long-term strategy, campaign optimization"
-      }
+      answer: "Yes, continuous campaigns help maintain visibility, collect data, and improve ROI over time through optimization. Consistent PPC presence increases brand recognition by 80% and typically reduces CPA by 15-25% over 6 months due to accumulated data and optimization insights."
     },
     {
       question: "What's the average ROI for PPC campaigns?",
-      answer: "Average PPC ROI ranges from 200% to 500% depending on industry and optimization. Well-managed campaigns typically achieve $2-5 return for every $1 spent. E-commerce often sees higher ROAS (400-800%), while B2B services average 300-500% ROI with proper lead qualification and nurturing.",
-      meta: {
-        title: "PPC ROI 2025 | Average Return on Ad Spend | Campaign Profitability",
-        description: "PPC ROI averages 200-500%: $2-5 return per $1 spent. E-commerce 400-800% ROAS, B2B services 300-500% ROI with proper lead qualification and nurturing.",
-        keywords: "PPC ROI, return on ad spend, campaign profitability, ROAS, PPC performance"
-      }
+      answer: "Average PPC ROI ranges from 200% to 500% depending on industry and optimization. Well-managed campaigns typically achieve $2-5 return for every $1 spent. E-commerce often sees higher ROAS (400-800%), while B2B services average 300-500% ROI with proper lead qualification and nurturing."
     },
     {
       question: "How long does it take to see PPC results?",
-      answer: "Initial PPC results appear within 24-48 hours of campaign launch. Meaningful data for optimization accumulates in 2-4 weeks. Significant ROI and consistent performance typically stabilize within 3-6 months of continuous optimization and testing.",
-      meta: {
-        title: "PPC Results Timeline 2025 | Campaign Performance & Optimization Schedule",
-        description: "PPC results timeline: Initial results in 24-48 hours, meaningful data in 2-4 weeks, consistent ROI in 3-6 months with continuous optimization and testing.",
-        keywords: "PPC results timeline, campaign performance, optimization schedule, PPC timeframe, results duration"
-      }
+      answer: "Initial PPC results appear within 24-48 hours of campaign launch. Meaningful data for optimization accumulates in 2-4 weeks. Significant ROI and consistent performance typically stabilize within 3-6 months of continuous optimization and testing."
     },
     {
       question: "Do you manage Facebook Ads and other platforms?",
-      answer: "Yes, we manage comprehensive PPC campaigns across Google Ads, Facebook, Instagram, LinkedIn, Twitter, and Microsoft Advertising. Multi-platform strategies typically increase overall campaign performance by 35-60% through audience diversification and cross-channel retargeting opportunities.",
-      meta: {
-        title: "Multi-Platform PPC Management | Google, Facebook, LinkedIn Ads | 2025 Strategies",
-        description: "Multi-platform PPC management: Google Ads, Facebook, Instagram, LinkedIn, Twitter. Multi-channel strategies increase performance by 35-60% through audience diversification.",
-        keywords: "multi-platform PPC, Facebook Ads, LinkedIn Ads, social media advertising, cross-channel PPC"
-      }
+      answer: "Yes, we manage comprehensive PPC campaigns across Google Ads, Facebook, Instagram, LinkedIn, Twitter, and Microsoft Advertising. Multi-platform strategies typically increase overall campaign performance by 35-60% through audience diversification and cross-channel retargeting opportunities."
     }
   ];
 
@@ -279,6 +239,22 @@ Landing pages are critical for converting clicks into customers. Use clear CTAs,
               "@type": "Offer",
               "description": "PPC Management Services"
             }
+          })}
+        </script>
+
+        {/* Consolidated FAQPage Schema - FIXED */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": faq.answer
+              }
+            }))
           })}
         </script>
       </Helmet>
@@ -485,7 +461,7 @@ Landing pages are critical for converting clicks into customers. Use clear CTAs,
         </div>
       </section>
 
-      {/* FAQ Section with Individual SEO */}
+      {/* FAQ Section - Corrected with Single Schema */}
       <section className="py-20 bg-background">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="text-center space-y-6 mb-12">
@@ -495,37 +471,10 @@ Landing pages are critical for converting clicks into customers. Use clear CTAs,
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index}>
-                {/* Individual FAQ SEO */}
-                <Helmet>
-                  <title>{faq.meta.title}</title>
-                  <meta name="description" content={faq.meta.description} />
-                  <meta name="keywords" content={faq.meta.keywords} />
-                  <meta property="og:title" content={faq.meta.title} />
-                  <meta property="og:description" content={faq.meta.description} />
-                </Helmet>
-                
-                <Card className="p-6 border-0 shadow-lg bg-card hover:shadow-xl transition-shadow">
-                  <h3 className="font-semibold text-foreground text-lg mb-3">{faq.question}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                  
-                  {/* FAQ Structured Data */}
-                  <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "FAQPage",
-                      "mainEntity": {
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": faq.answer
-                        }
-                      }
-                    })}
-                  </script>
-                </Card>
-              </div>
+              <Card key={index} className="p-6 border-0 shadow-lg bg-card hover:shadow-xl transition-shadow">
+                <h3 className="font-semibold text-foreground text-lg mb-3">{faq.question}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </Card>
             ))}
           </div>
         </div>

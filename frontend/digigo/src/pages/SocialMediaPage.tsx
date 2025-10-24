@@ -245,111 +245,51 @@ Download our free template to get started with organized content planning.`,
   const faqs = [
     {
       question: "How often should I post on social media for maximum engagement?",
-      answer: "Ideal posting frequency varies by platform: Instagram 3-5 times/week, Facebook 1-2 times/day, LinkedIn 1-5 times/week, TikTok 3-7 times/week. Focus on quality over quantity and maintain consistency. Studies show brands that post consistently see 250% higher engagement rates and 3x faster follower growth compared to irregular posting schedules.",
-      meta: {
-        title: "Social Media Posting Frequency 2025 | Optimal Schedule for Maximum Engagement",
-        description: "Optimal social media posting frequency: Instagram 3-5x/week, Facebook 1-2x/day, LinkedIn 1-5x/week, TikTok 3-7x/week. Consistent posting increases engagement by 250%.",
-        keywords: "posting frequency, social media schedule, content frequency, engagement optimization, posting consistency"
-      }
+      answer: "Ideal posting frequency varies by platform: Instagram 3-5 times/week, Facebook 1-2 times/day, LinkedIn 1-5 times/week, TikTok 3-7 times/week. Focus on quality over quantity and maintain consistency. Studies show brands that post consistently see 250% higher engagement rates and 3x faster follower growth compared to irregular posting schedules."
     },
     {
       question: "What's the difference between organic and paid social media marketing?",
-      answer: "Organic marketing is free content you post to engage followers naturally, while paid marketing involves spending on ads to reach larger, targeted audiences. A successful strategy uses both: organic for community building and paid for rapid growth and conversions. Organic reach averages 5-10% of your followers, while paid campaigns can reach millions of targeted users with precise demographic and interest targeting.",
-      meta: {
-        title: "Organic vs Paid Social Media Marketing | Strategy Differences & ROI Comparison",
-        description: "Organic social media: free content for community building (5-10% reach). Paid social: targeted ads for rapid growth and conversions. Combined strategy delivers best results.",
-        keywords: "organic social media, paid social media, social media advertising, ROI comparison, marketing strategy"
-      }
+      answer: "Organic marketing is free content you post to engage followers naturally, while paid marketing involves spending on ads to reach larger, targeted audiences. A successful strategy uses both: organic for community building and paid for rapid growth and conversions. Organic reach averages 5-10% of your followers, while paid campaigns can reach millions of targeted users with precise demographic and interest targeting."
     },
     {
       question: "Which social media platform is best for my business?",
-      answer: "B2B businesses excel on LinkedIn and Twitter, B2C retail thrives on Instagram and TikTok, Facebook works for broad demographics, Pinterest for visual products, and YouTube for educational content. Consider your target audience's age, interests, and behavior. 89% of B2B marketers use LinkedIn for lead generation, while 90% of Instagram users follow business accounts, making it ideal for B2C engagement and sales.",
-      meta: {
-        title: "Best Social Media Platform for Business 2025 | B2B vs B2C Platform Selection",
-        description: "Best social media platforms: B2B - LinkedIn (89% use for leads), B2C - Instagram (90% follow businesses), Facebook for broad reach, TikTok for younger audiences.",
-        keywords: "social media platforms, platform selection, B2B social media, B2C social media, LinkedIn marketing, Instagram marketing"
-      }
+      answer: "B2B businesses excel on LinkedIn and Twitter, B2C retail thrives on Instagram and TikTok, Facebook works for broad demographics, Pinterest for visual products, and YouTube for educational content. Consider your target audience's age, interests, and behavior. 89% of B2B marketers use LinkedIn for lead generation, while 90% of Instagram users follow business accounts, making it ideal for B2C engagement and sales."
     },
     {
       question: "How much should I budget for social media marketing?",
-      answer: "Small businesses typically allocate 5-15% of marketing budget to social media. For startups, $500-2000/month for ads plus content creation costs. Enterprise companies may spend $10,000+/month. Start small, test, and scale based on ROI. The average ROI for social media marketing is 250%, with well-optimized campaigns achieving 400-500% returns through targeted advertising and conversion optimization.",
-      meta: {
-        title: "Social Media Marketing Budget 2025 | Small Business to Enterprise Cost Guide",
-        description: "Social media marketing budget: small businesses 5-15% of marketing budget, startups $500-2000/month, enterprise $10,000+/month. Average ROI 250%, optimized campaigns 400-500%.",
-        keywords: "social media budget, marketing costs, ROI calculation, budget allocation, advertising spend"
-      }
+      answer: "Small businesses typically allocate 5-15% of marketing budget to social media. For startups, $500-2000/month for ads plus content creation costs. Enterprise companies may spend $10,000+/month. Start small, test, and scale based on ROI. The average ROI for social media marketing is 250%, with well-optimized campaigns achieving 400-500% returns through targeted advertising and conversion optimization."
     },
     {
       question: "What are the most important social media metrics to track?",
-      answer: "Focus on engagement rate, click-through rate, conversion rate, reach, impressions, follower growth, and ROI. Avoid vanity metrics like likes alone. Track metrics that directly impact business goals such as leads generated and sales conversions. Top-performing brands monitor 15+ KPIs including sentiment analysis, share of voice, and customer lifetime value from social channels.",
-      meta: {
-        title: "Social Media Metrics 2025 | Key Performance Indicators & KPI Tracking Guide",
-        description: "Essential social media metrics: engagement rate, CTR, conversion rate, reach, impressions, follower growth, ROI. Track 15+ KPIs for comprehensive performance analysis.",
-        keywords: "social media metrics, KPI tracking, performance indicators, engagement rate, conversion tracking, analytics"
-      }
+      answer: "Focus on engagement rate, click-through rate, conversion rate, reach, impressions, follower growth, and ROI. Avoid vanity metrics like likes alone. Track metrics that directly impact business goals such as leads generated and sales conversions. Top-performing brands monitor 15+ KPIs including sentiment analysis, share of voice, and customer lifetime value from social channels."
     },
     {
       question: "How can I increase my Instagram followers organically?",
-      answer: "Post consistently high-quality content, use relevant hashtags (5-10 per post), engage with your audience daily, collaborate with influencers in your niche, run contests, use Instagram Stories and Reels, and cross-promote on other platforms. Brands that use Instagram Reels see 30% higher reach and 50% more engagement compared to static posts. Daily engagement with followers increases follower growth by 200%.",
-      meta: {
-        title: "Increase Instagram Followers Organically 2025 | Growth Strategies & Engagement Tips",
-        description: "Increase Instagram followers organically: consistent posting, relevant hashtags, daily engagement, influencer collaborations, Reels (30% higher reach), contests, cross-promotion.",
-        keywords: "Instagram growth, organic followers, engagement strategies, Instagram Reels, hashtag strategy, influencer collaborations"
-      }
+      answer: "Post consistently high-quality content, use relevant hashtags (5-10 per post), engage with your audience daily, collaborate with influencers in your niche, run contests, use Instagram Stories and Reels, and cross-promote on other platforms. Brands that use Instagram Reels see 30% higher reach and 50% more engagement compared to static posts. Daily engagement with followers increases follower growth by 200%."
     },
     {
       question: "What content performs best on Facebook in 2025?",
-      answer: "Video content (especially live videos), engaging Stories, community-focused posts in Groups, educational content, and interactive posts like polls and questions. Native videos outperform shared YouTube links by 3x in reach. Facebook Live videos generate 6x more interactions than regular videos, and Group content sees 2x higher engagement compared to Page posts. Carousel posts with 5-7 images achieve 3x higher click-through rates.",
-      meta: {
-        title: "Best Facebook Content 2025 | Video, Live, Groups | Engagement Optimization",
-        description: "Best Facebook content 2025: video (3x higher reach), Live videos (6x more interactions), Group content (2x higher engagement), carousels (3x higher CTR), interactive posts.",
-        keywords: "Facebook content, video marketing, Facebook Live, Group engagement, content strategy, engagement optimization"
-      }
+      answer: "Video content (especially live videos), engaging Stories, community-focused posts in Groups, educational content, and interactive posts like polls and questions. Native videos outperform shared YouTube links by 3x in reach. Facebook Live videos generate 6x more interactions than regular videos, and Group content sees 2x higher engagement compared to Page posts. Carousel posts with 5-7 images achieve 3x higher click-through rates."
     },
     {
       question: "How do I create an effective social media strategy?",
-      answer: "Start with SMART goals, define your target audience, conduct competitor analysis, choose appropriate platforms, create content calendar, establish brand voice, allocate budget, implement tracking, and regularly analyze and adjust based on performance data. Successful strategies include 70% value-driven content, 20% engagement content, and 10% promotional content. Brands with documented strategies are 3x more likely to achieve their marketing goals.",
-      meta: {
-        title: "Social Media Strategy 2025 | Complete Planning Guide & Implementation Framework",
-        description: "Effective social media strategy: SMART goals, audience definition, competitor analysis, platform selection, content calendar, brand voice, budget allocation, performance tracking.",
-        keywords: "social media strategy, marketing plan, content strategy, audience targeting, performance tracking, implementation framework"
-      }
+      answer: "Start with SMART goals, define your target audience, conduct competitor analysis, choose appropriate platforms, create content calendar, establish brand voice, allocate budget, implement tracking, and regularly analyze and adjust based on performance data. Successful strategies include 70% value-driven content, 20% engagement content, and 10% promotional content. Brands with documented strategies are 3x more likely to achieve their marketing goals."
     },
     {
       question: "What are the latest social media trends for 2025?",
-      answer: "AI-generated content, augmented reality filters, social commerce expansion, audio content (podcasts, audio rooms), micro-influencer collaborations, sustainability-focused branding, and personalized customer experiences through chatbots. 75% of consumers now expect personalized experiences, and brands using AI for content creation see 40% higher engagement rates. Social commerce is projected to reach $2.9 trillion by 2026, making buyable posts essential for e-commerce brands.",
-      meta: {
-        title: "Social Media Trends 2025 | AI, AR, Social Commerce | Future Marketing Strategies",
-        description: "2025 social media trends: AI-generated content (40% higher engagement), AR filters, social commerce ($2.9T by 2026), audio content, micro-influencers, personalized experiences.",
-        keywords: "social media trends, AI content, augmented reality, social commerce, audio content, micro-influencers"
-      }
+      answer: "AI-generated content, augmented reality filters, social commerce expansion, audio content (podcasts, audio rooms), micro-influencer collaborations, sustainability-focused branding, and personalized customer experiences through chatbots. 75% of consumers now expect personalized experiences, and brands using AI for content creation see 40% higher engagement rates. Social commerce is projected to reach $2.9 trillion by 2026, making buyable posts essential for e-commerce brands."
     },
     {
       question: "How can I measure social media ROI effectively?",
-      answer: "Track conversions using UTM parameters, calculate customer acquisition cost, measure lifetime value of social media customers, use analytics tools, attribute sales to social campaigns, and compare revenue generated against advertising spend and labor costs. Advanced ROI measurement includes multi-touch attribution, brand lift studies, and sentiment analysis. Companies using comprehensive ROI tracking see 30% higher marketing efficiency and 25% better budget allocation decisions.",
-      meta: {
-        title: "Social Media ROI Measurement 2025 | Advanced Tracking & Attribution Models",
-        description: "Measure social media ROI: UTM tracking, CAC calculation, LTV measurement, multi-touch attribution, brand lift studies. Comprehensive tracking increases marketing efficiency by 30%.",
-        keywords: "social media ROI, ROI measurement, attribution models, conversion tracking, performance analytics, marketing efficiency"
-      }
+      answer: "Track conversions using UTM parameters, calculate customer acquisition cost, measure lifetime value of social media customers, use analytics tools, attribute sales to social campaigns, and compare revenue generated against advertising spend and labor costs. Advanced ROI measurement includes multi-touch attribution, brand lift studies, and sentiment analysis. Companies using comprehensive ROI tracking see 30% higher marketing efficiency and 25% better budget allocation decisions."
     },
     {
       question: "What's the optimal length for social media videos?",
-      answer: "TikTok/Reels: 15-30 seconds, Instagram Stories: 15 seconds per clip, YouTube Shorts: under 60 seconds, Facebook/Instagram Feed: 30-90 seconds, LinkedIn: 30 seconds to 3 minutes. Hook viewers in the first 3 seconds for best retention. Videos under 60 seconds retain 80% of viewers, while videos over 2 minutes see 50% drop-off. Educational content can perform well at longer lengths (3-5 minutes) if value is delivered quickly.",
-      meta: {
-        title: "Social Media Video Length 2025 | Platform-Specific Duration Guide | Retention Optimization",
-        description: "Optimal social media video length: TikTok/Reels 15-30s, Stories 15s, YouTube Shorts under 60s, Feed 30-90s, LinkedIn 30s-3min. Hook viewers in first 3 seconds for 80% retention.",
-        keywords: "video length, social media video, retention optimization, platform guidelines, video strategy, engagement duration"
-      }
+      answer: "TikTok/Reels: 15-30 seconds, Instagram Stories: 15 seconds per clip, YouTube Shorts: under 60 seconds, Facebook/Instagram Feed: 30-90 seconds, LinkedIn: 30 seconds to 3 minutes. Hook viewers in the first 3 seconds for best retention. Videos under 60 seconds retain 80% of viewers, while videos over 2 minutes see 50% drop-off. Educational content can perform well at longer lengths (3-5 minutes) if value is delivered quickly."
     },
     {
       question: "How do I handle negative comments on social media?",
-      answer: "Respond professionally within 24 hours, address concerns publicly but take complex issues private, never delete legitimate criticism, have a crisis management plan, train your team on response protocols, and use negative feedback to improve your business. 70% of consumers expect responses within an hour on social media. Brands that handle negative feedback well see 25% higher customer loyalty and can convert 30% of complainers into brand advocates through effective resolution.",
-      meta: {
-        title: "Handling Negative Social Media Comments 2025 | Crisis Management & Response Strategy",
-        description: "Handle negative social media comments: respond within 24 hours (70% expect 1-hour response), address publicly/take private, never delete criticism, crisis management plan, team training.",
-        keywords: "negative comments, crisis management, social media response, customer service, reputation management, brand advocacy"
-      }
+      answer: "Respond professionally within 24 hours, address concerns publicly but take complex issues private, never delete legitimate criticism, have a crisis management plan, train your team on response protocols, and use negative feedback to improve your business. 70% of consumers expect responses within an hour on social media. Brands that handle negative feedback well see 25% higher customer loyalty and can convert 30% of complainers into brand advocates through effective resolution."
     }
   ];
 
@@ -386,6 +326,22 @@ Download our free template to get started with organized content planning.`,
               "@type": "Offer",
               "description": "Social Media Marketing Services"
             }
+          })}
+        </script>
+
+        {/* Consolidated FAQPage Schema - FIXED */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": faq.answer
+              }
+            }))
           })}
         </script>
       </Helmet>
@@ -554,43 +510,16 @@ Download our free template to get started with organized content planning.`,
         </div>
       </section>
 
-      {/* FAQ Section with Individual SEO */}
+      {/* FAQ Section - Corrected with Single Schema */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Frequently Asked Questions About Social Media Marketing</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {faqs.map((faq,index)=>(
-              <div key={index}>
-                {/* Individual FAQ SEO */}
-                <Helmet>
-                  <title>{faq.meta.title}</title>
-                  <meta name="description" content={faq.meta.description} />
-                  <meta name="keywords" content={faq.meta.keywords} />
-                  <meta property="og:title" content={faq.meta.title} />
-                  <meta property="og:description" content={faq.meta.description} />
-                </Helmet>
-                
-                <Card className="p-6 border-0 shadow-lg bg-gradient-card hover:shadow-xl transition-shadow duration-300">
-                  <h3 className="font-semibold text-foreground mb-3 text-lg">{faq.question}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                  
-                  {/* FAQ Structured Data */}
-                  <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "FAQPage",
-                      "mainEntity": {
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": faq.answer
-                        }
-                      }
-                    })}
-                  </script>
-                </Card>
-              </div>
+              <Card key={index} className="p-6 border-0 shadow-lg bg-gradient-card hover:shadow-xl transition-shadow duration-300">
+                <h3 className="font-semibold text-foreground mb-3 text-lg">{faq.question}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </Card>
             ))}
           </div>
         </div>

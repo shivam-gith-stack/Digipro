@@ -230,111 +230,51 @@ Test subject lines, sender names, content length, CTA placement, and send times 
   const faqs = [
     {
       question: "What is the average ROI for email marketing?",
-      answer: "Email marketing has an average ROI of $42 for every $1 spent, making it one of the most cost-effective marketing channels. ROI varies by industry, with e-commerce seeing returns up to $45:$1 and B2B around $35:$1.",
-      meta: {
-        title: "Email Marketing ROI 2025 | $42 Average Return Per $1 Spent | Cost-Effective",
-        description: "Email marketing delivers $42 average ROI per $1 spent. Industry-specific returns: e-commerce $45:$1, B2B $35:$1. Most cost-effective marketing channel available.",
-        keywords: "email marketing ROI, return on investment, cost-effective marketing, $42 ROI, email campaign returns"
-      }
+      answer: "Email marketing has an average ROI of $42 for every $1 spent, making it one of the most cost-effective marketing channels. ROI varies by industry, with e-commerce seeing returns up to $45:$1 and B2B around $35:$1."
     },
     {
       question: "How often should I send marketing emails?",
-      answer: "Optimal frequency depends on your audience and content. Generally, 1-2 times per week for newsletters, daily for promotional campaigns, and triggered emails based on user behavior. Monitor engagement metrics and adjust based on subscriber feedback.",
-      meta: {
-        title: "Email Marketing Frequency 2025 | Optimal Send Times & Best Practices",
-        description: "Optimal email marketing frequency: 1-2 weekly newsletters, daily promotions, behavioral triggers. Monitor engagement metrics for perfect timing strategy.",
-        keywords: "email frequency, send times, engagement optimization, newsletter timing, promotional emails"
-      }
+      answer: "Optimal frequency depends on your audience and content. Generally, 1-2 times per week for newsletters, daily for promotional campaigns, and triggered emails based on user behavior. Monitor engagement metrics and adjust based on subscriber feedback."
     },
     {
       question: "What's a good open rate for email campaigns?",
-      answer: "Industry averages range from 20-30%. B2B campaigns average 15-25%, while B2C typically sees 20-35%. Factors affecting open rates include subject line quality, sender reputation, list quality, and audience relevance.",
-      meta: {
-        title: "Email Open Rate Benchmarks 2025 | 20-30% Industry Average | B2B vs B2C",
-        description: "Email open rate benchmarks: 20-30% industry average, B2B 15-25%, B2C 20-35%. Factors: subject lines, sender reputation, list quality, audience relevance.",
-        keywords: "email open rates, benchmark metrics, B2B email, B2C email, subject line optimization"
-      }
+      answer: "Industry averages range from 20-30%. B2B campaigns average 15-25%, while B2C typically sees 20-35%. Factors affecting open rates include subject line quality, sender reputation, list quality, and audience relevance."
     },
     {
       question: "How can I improve my email deliverability?",
-      answer: "Maintain list hygiene, use double opt-in, authenticate your domain (SPF, DKIM, DMARC), avoid spam triggers, monitor sender reputation, segment your list, and regularly clean inactive subscribers.",
-      meta: {
-        title: "Email Deliverability Improvement 2025 | Inbox Placement Strategies",
-        description: "Improve email deliverability with list hygiene, double opt-in, domain authentication, spam trigger avoidance, sender reputation monitoring, and list segmentation.",
-        keywords: "email deliverability, inbox placement, spam prevention, sender reputation, domain authentication"
-      }
+      answer: "Maintain list hygiene, use double opt-in, authenticate your domain (SPF, DKIM, DMARC), avoid spam triggers, monitor sender reputation, segment your list, and regularly clean inactive subscribers."
     },
     {
       question: "What's the best time to send marketing emails?",
-      answer: "Generally, Tuesday-Thursday between 9-11 AM local time. However, test with your audience. B2B performs best during business hours, while B2C sees higher engagement evenings and weekends.",
-      meta: {
-        title: "Best Time to Send Emails 2025 | Tuesday-Thursday 9-11 AM Optimization",
-        description: "Best email send times: Tuesday-Thursday 9-11 AM local time. B2B: business hours, B2C: evenings/weekends. Audience testing recommended for optimal timing.",
-        keywords: "email send times, optimal timing, B2B email, B2C email, engagement optimization"
-      }
+      answer: "Generally, Tuesday-Thursday between 9-11 AM local time. However, test with your audience. B2B performs best during business hours, while B2C sees higher engagement evenings and weekends."
     },
     {
       question: "How do I build an email list from scratch?",
-      answer: "Create valuable lead magnets, optimize website opt-in forms, use social media promotions, host webinars, run contests, collaborate with influencers, and leverage content upgrades in blog posts.",
-      meta: {
-        title: "Email List Building from Scratch 2025 | Lead Magnets & Growth Strategies",
-        description: "Build email list from scratch with lead magnets, opt-in form optimization, social media promotions, webinars, contests, influencer collaborations, and content upgrades.",
-        keywords: "email list building, lead magnets, subscriber growth, opt-in forms, list acquisition"
-      }
+      answer: "Create valuable lead magnets, optimize website opt-in forms, use social media promotions, host webinars, run contests, collaborate with influencers, and leverage content upgrades in blog posts."
     },
     {
       question: "What's the difference between cold email and marketing email?",
-      answer: "Cold email is unsolicited outreach to prospects, requiring careful compliance. Marketing email goes to subscribers who opted in. Cold email focuses on lead generation, while marketing email nurtures existing relationships.",
-      meta: {
-        title: "Cold Email vs Marketing Email 2025 | Compliance & Strategy Differences",
-        description: "Cold email: unsolicited outreach with compliance requirements. Marketing email: opted-in subscribers for relationship nurturing. Different goals and strategies for each.",
-        keywords: "cold email, marketing email, lead generation, email compliance, outreach strategies"
-      }
+      answer: "Cold email is unsolicited outreach to prospects, requiring careful compliance. Marketing email goes to subscribers who opted in. Cold email focuses on lead generation, while marketing email nurtures existing relationships."
     },
     {
       question: "How can I reduce my email unsubscribe rate?",
-      answer: "Set clear expectations during sign-up, segment your audience, provide valuable content, optimize send frequency, allow subscribers to choose email types, and regularly survey your audience about preferences.",
-      meta: {
-        title: "Reduce Email Unsubscribe Rate 2025 | Retention & Engagement Strategies",
-        description: "Reduce email unsubscribe rates with clear expectations, audience segmentation, valuable content, frequency optimization, preference centers, and regular surveys.",
-        keywords: "unsubscribe rate, email retention, subscriber engagement, list management, churn reduction"
-      }
+      answer: "Set clear expectations during sign-up, segment your audience, provide valuable content, optimize send frequency, allow subscribers to choose email types, and regularly survey your audience about preferences."
     },
     {
       question: "What are the best email marketing platforms?",
-      answer: "Top platforms include HubSpot (all-in-one), Mailchimp (ease of use), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), and Sendinblue (affordable). Choose based on your budget and needs.",
-      meta: {
-        title: "Best Email Marketing Platforms 2025 | HubSpot, Mailchimp, Klaviyo Comparison",
-        description: "Top email marketing platforms: HubSpot (all-in-one), Mailchimp (user-friendly), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), Sendinblue (affordable).",
-        keywords: "email marketing platforms, HubSpot, Mailchimp, Klaviyo, ActiveCampaign, software comparison"
-      }
+      answer: "Top platforms include HubSpot (all-in-one), Mailchimp (ease of use), ConvertKit (creators), ActiveCampaign (automation), Klaviyo (e-commerce), and Sendinblue (affordable). Choose based on your budget and needs."
     },
     {
       question: "How do I write email subject lines that get opens?",
-      answer: "Keep under 50 characters, create urgency or curiosity, personalize when possible, avoid spam words, ask questions, use emojis strategically, and A/B test different approaches.",
-      meta: {
-        title: "Email Subject Line Writing 2025 | 50 Characters, Urgency, Personalization",
-        description: "Write email subject lines that get opens: under 50 characters, urgency/curiosity creation, personalization, spam word avoidance, questions, emojis, A/B testing.",
-        keywords: "email subject lines, open rate optimization, A/B testing, personalization, spam avoidance"
-      }
+      answer: "Keep under 50 characters, create urgency or curiosity, personalize when possible, avoid spam words, ask questions, use emojis strategically, and A/B test different approaches."
     },
     {
       question: "What is email segmentation and why is it important?",
-      answer: "Segmentation divides your list into groups based on demographics, behavior, or preferences. It increases relevance, improves engagement (14-30% higher open rates), and boosts conversions by sending targeted content.",
-      meta: {
-        title: "Email Segmentation Importance 2025 | 14-30% Higher Open Rates | Targeting",
-        description: "Email segmentation divides lists by demographics, behavior, preferences. Increases relevance, improves engagement (14-30% higher opens), boosts conversions with targeted content.",
-        keywords: "email segmentation, list targeting, personalized content, engagement improvement, conversion optimization"
-      }
+      answer: "Segmentation divides your list into groups based on demographics, behavior, or preferences. It increases relevance, improves engagement (14-30% higher open rates), and boosts conversions by sending targeted content."
     },
     {
       question: "How can I make my emails mobile-friendly?",
-      answer: "Use responsive design, single-column layouts, large CTAs (min 44px), concise copy, optimized images, legible fonts (16px+), and test on various devices and email clients.",
-      meta: {
-        title: "Mobile-Friendly Email Design 2025 | 60% Mobile Opens | Responsive Optimization",
-        description: "Create mobile-friendly emails with responsive design, single-column layouts, large CTAs (44px+), concise copy, optimized images, legible fonts (16px+), multi-device testing.",
-        keywords: "mobile email, responsive design, mobile optimization, email clients, mobile CTAs"
-      }
+      answer: "Use responsive design, single-column layouts, large CTAs (min 44px), concise copy, optimized images, legible fonts (16px+), and test on various devices and email clients."
     }
   ];
 
@@ -371,6 +311,22 @@ Test subject lines, sender names, content length, CTA placement, and send times 
               "@type": "Offer",
               "description": "Email Marketing Services"
             }
+          })}
+        </script>
+
+        {/* Consolidated FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": faq.answer
+              }
+            }))
           })}
         </script>
       </Helmet>
@@ -580,45 +536,18 @@ Test subject lines, sender names, content length, CTA placement, and send times 
         </div>
       </section>
 
-      {/* FAQ Section with Individual SEO */}
+      {/* FAQ Section - Corrected with Single Schema */}
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Email Marketing FAQs</h2>
           <p className="text-lg text-gray-600 mb-12 text-center">Answers to the most common email marketing questions</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {faqs.map((faq,index)=>(
-              <div key={index}>
-                {/* Individual FAQ SEO */}
-                <Helmet>
-                  <title>{faq.meta.title}</title>
-                  <meta name="description" content={faq.meta.description} />
-                  <meta name="keywords" content={faq.meta.keywords} />
-                  <meta property="og:title" content={faq.meta.title} />
-                  <meta property="og:description" content={faq.meta.description} />
-                </Helmet>
-                
-                <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <h3 className="font-semibold text-gray-900 mb-3 text-lg">{faq.question}</h3>
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                  
-                  {/* FAQ Structured Data */}
-                  <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "FAQPage",
-                      "mainEntity": {
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": faq.answer
-                        }
-                      }
-                    })}
-                  </script>
-                </Card>
-              </div>
+            {faqs.map((faq, index) => (
+              <Card key={index} className="p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 className="font-semibold text-gray-900 mb-3 text-lg">{faq.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </Card>
             ))}
           </div>
         </div>

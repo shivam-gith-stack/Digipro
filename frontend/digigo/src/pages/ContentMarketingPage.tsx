@@ -111,75 +111,35 @@ const ContentMarketingPage = () => {
   const faqs = [
     {
       question: "What type of content should I create?",
-      answer: "Focus on blog posts, videos, infographics, case studies, and social media content that addresses your audience's needs and pain points.",
-      meta: {
-        title: "Best Content Types for Marketing | Blog Posts, Videos, Infographics 2025",
-        description: "Discover the best content types for marketing: blog posts, videos, infographics, case studies. Address audience needs and pain points effectively.",
-        keywords: "content types, blog posts, video content, infographics, case studies, content marketing formats"
-      }
+      answer: "Focus on blog posts, videos, infographics, case studies, and social media content that addresses your audience's needs and pain points."
     },
     {
       question: "How often should I publish content?",
-      answer: "Consistency is key. Aim for 2-3 blog posts per week plus daily social media content. Quality should never be sacrificed for quantity.",
-      meta: {
-        title: "Content Publishing Frequency 2025 | Optimal Schedule for SEO & Engagement",
-        description: "Learn optimal content publishing frequency: 2-3 blog posts weekly plus daily social media. Balance consistency with quality for best results.",
-        keywords: "content publishing frequency, blog post schedule, social media posting, content consistency, SEO publishing"
-      }
+      answer: "Consistency is key. Aim for 2-3 blog posts per week plus daily social media content. Quality should never be sacrificed for quantity."
     },
     {
       question: "How do I measure content marketing success?",
-      answer: "Track KPIs like organic traffic, social shares, backlinks, leads generated, conversion rates, and time on page.",
-      meta: {
-        title: "Content Marketing Success Metrics | Track Organic Traffic & Conversions",
-        description: "Measure content marketing success with KPIs: organic traffic, social shares, backlinks, leads, conversion rates, and engagement metrics.",
-        keywords: "content marketing metrics, KPI tracking, organic traffic, conversion rates, engagement metrics, performance measurement"
-      }
+      answer: "Track KPIs like organic traffic, social shares, backlinks, leads generated, conversion rates, and time on page."
     },
     {
       question: "What's the difference between content marketing and copywriting?",
-      answer: "Content marketing focuses on educating and building relationships, while copywriting aims to persuade and drive immediate action.",
-      meta: {
-        title: "Content Marketing vs Copywriting | Education vs Persuasion Strategies",
-        description: "Understand content marketing vs copywriting: education and relationship building vs persuasion and immediate action driving strategies.",
-        keywords: "content marketing vs copywriting, educational content, persuasive writing, relationship building, conversion copy"
-      }
+      answer: "Content marketing focuses on educating and building relationships, while copywriting aims to persuade and drive immediate action."
     },
     {
       question: "How long does it take to see results from content marketing?",
-      answer: "Typically 3-6 months for significant SEO results, but social media engagement can improve within weeks of consistent posting.",
-      meta: {
-        title: "Content Marketing Results Timeline | 3-6 Months SEO, Weeks Social Media",
-        description: "Content marketing results timeline: 3-6 months for SEO impact, weeks for social media engagement improvement with consistent posting.",
-        keywords: "content marketing timeline, SEO results time, social media engagement, content ROI timeline, marketing results"
-      }
+      answer: "Typically 3-6 months for significant SEO results, but social media engagement can improve within weeks of consistent posting."
     },
     {
       question: "Should I focus on short-form or long-form content?",
-      answer: "Use both strategically. Long-form ranks better for SEO, while short-form works well for social media and quick engagement.",
-      meta: {
-        title: "Short-form vs Long-form Content | SEO Ranking vs Social Media Engagement",
-        description: "Strategic use of short-form vs long-form content: long-form for SEO ranking, short-form for social media engagement and quick wins.",
-        keywords: "short-form content, long-form content, SEO ranking, social media engagement, content length strategy"
-      }
+      answer: "Use both strategically. Long-form ranks better for SEO, while short-form works well for social media and quick engagement."
     },
     {
       question: "How important is visual content in marketing?",
-      answer: "Extremely important. Visual content increases engagement by 80% and helps communicate complex information more effectively.",
-      meta: {
-        title: "Visual Content Importance | 80% Engagement Increase | Marketing 2025",
-        description: "Visual content increases engagement by 80% and improves complex information communication. Essential for modern content marketing success.",
-        keywords: "visual content, infographics, images, engagement boost, content marketing, visual communication"
-      }
+      answer: "Extremely important. Visual content increases engagement by 80% and helps communicate complex information more effectively."
     },
     {
       question: "What's the best way to repurpose existing content?",
-      answer: "Turn blog posts into videos, infographics, social media threads, podcasts, or email newsletters to maximize reach.",
-      meta: {
-        title: "Content Repurposing Strategies | Maximize Reach & ROI | 2025 Guide",
-        description: "Best content repurposing strategies: transform blog posts into videos, infographics, social threads, podcasts, and newsletters for maximum reach.",
-        keywords: "content repurposing, maximize reach, ROI optimization, content transformation, multi-format content"
-      }
+      answer: "Turn blog posts into videos, infographics, social media threads, podcasts, or email newsletters to maximize reach."
     }
   ];
 
@@ -243,6 +203,22 @@ const ContentMarketingPage = () => {
               "@type": "Offer",
               "description": "Content Marketing Services"
             }
+          })}
+        </script>
+
+        {/* Consolidated FAQPage Schema - FIXED */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": faq.answer
+              }
+            }))
           })}
         </script>
       </Helmet>
@@ -374,43 +350,16 @@ const ContentMarketingPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section with Individual SEO */}
+      {/* FAQ Section - Corrected with Single Schema */}
       <section className="py-20 bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto max-w-4xl px-4">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Content Marketing FAQs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {faqs.map((faq,index) => (
-              <div key={index}>
-                {/* Individual FAQ SEO */}
-                <Helmet>
-                  <title>{faq.meta.title}</title>
-                  <meta name="description" content={faq.meta.description} />
-                  <meta name="keywords" content={faq.meta.keywords} />
-                  <meta property="og:title" content={faq.meta.title} />
-                  <meta property="og:description" content={faq.meta.description} />
-                </Helmet>
-                
-                <Card className="p-6 border-0 shadow-lg bg-gradient-to-br from-white to-blue-50 hover:shadow-xl transition-shadow">
-                  <h3 className="font-semibold text-foreground mb-3 text-lg">{faq.question}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                  
-                  {/* FAQ Structured Data */}
-                  <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "FAQPage",
-                      "mainEntity": {
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": faq.answer
-                        }
-                      }
-                    })}
-                  </script>
-                </Card>
-              </div>
+              <Card key={index} className="p-6 border-0 shadow-lg bg-gradient-to-br from-white to-blue-50 hover:shadow-xl transition-shadow">
+                <h3 className="font-semibold text-foreground mb-3 text-lg">{faq.question}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+              </Card>
             ))}
           </div>
         </div>
