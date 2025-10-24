@@ -294,75 +294,35 @@ Prioritize relevance and authority over quantity. A single link from a highly au
   const faqs = [
     {
       question: "What is Local SEO and why is it important?",
-      answer: "Local SEO focuses on optimizing your online presence to attract more business from relevant local searches. It's crucial for businesses targeting customers in a specific geographic area, as it helps you appear in Google Maps, local search results, and improves visibility against competitors. 46% of all Google searches have local intent, making local SEO essential for brick-and-mortar businesses and service areas.",
-      meta: {
-        title: "Local SEO Definition & Importance | Google Maps Optimization 2025",
-        description: "Local SEO optimizes your online presence for local searches, helping businesses appear in Google Maps and local results. 46% of searches have local intent.",
-        keywords: "local SEO, Google Maps optimization, local search, near me searches, local business SEO"
-      }
+      answer: "Local SEO focuses on optimizing your online presence to attract more business from relevant local searches. It's crucial for businesses targeting customers in a specific geographic area, as it helps you appear in Google Maps, local search results, and improves visibility against competitors. 46% of all Google searches have local intent, making local SEO essential for brick-and-mortar businesses and service areas."
     },
     {
       question: "How long does it take to see results from SEO?",
-      answer: "SEO is a long-term strategy. Typically, businesses can start seeing measurable results within 3-6 months, but the timeline varies based on competition, current website health, and consistency in content creation and backlink building. Initial technical SEO improvements may show results in 4-8 weeks, while content-based strategies and authority building typically take 6-12 months for significant impact.",
-      meta: {
-        title: "SEO Results Timeline 2025 | 3-6 Months Initial Results | Long-term Strategy",
-        description: "SEO typically shows results in 3-6 months, with technical improvements in 4-8 weeks and content strategies taking 6-12 months for significant impact.",
-        keywords: "SEO timeline, SEO results time, how long for SEO, SEO duration, search engine optimization timeline"
-      }
+      answer: "SEO is a long-term strategy. Typically, businesses can start seeing measurable results within 3-6 months, but the timeline varies based on competition, current website health, and consistency in content creation and backlink building. Initial technical SEO improvements may show results in 4-8 weeks, while content-based strategies and authority building typically take 6-12 months for significant impact."
     },
     {
       question: "Can SEO guarantee a #1 Google ranking?",
-      answer: "No reputable SEO agency can guarantee #1 ranking, as search engines use complex algorithms. However, effective SEO strategies can significantly improve your rankings, increase organic traffic, and enhance online visibility. We focus on data-driven strategies that typically achieve top 3 rankings for targeted keywords and substantial traffic growth within 6-12 months.",
-      meta: {
-        title: "SEO Guarantees | Can SEO Guarantee #1 Ranking? | Realistic SEO Expectations",
-        description: "No ethical SEO agency guarantees #1 rankings due to Google's complex algorithms, but proven strategies achieve top 3 positions and significant traffic growth.",
-        keywords: "SEO guarantees, #1 ranking, realistic SEO expectations, search engine ranking promises"
-      }
+      answer: "No reputable SEO agency can guarantee #1 ranking, as search engines use complex algorithms. However, effective SEO strategies can significantly improve your rankings, increase organic traffic, and enhance online visibility. We focus on data-driven strategies that typically achieve top 3 rankings for targeted keywords and substantial traffic growth within 6-12 months."
     },
     {
       question: "What's the difference between on-page and off-page SEO?",
-      answer: "On-page SEO refers to optimization elements on your website (content, HTML tags, internal linking). Off-page SEO involves activities outside your website (backlinks, social signals, citations). Both are essential for comprehensive SEO success. On-page SEO controls what you can change on your site, while off-page SEO builds authority and trust signals from other websites.",
-      meta: {
-        title: "On-Page vs Off-Page SEO | Technical vs Authority Building | Complete Guide",
-        description: "On-page SEO involves website optimization (content, technical elements), while off-page SEO focuses on external authority signals (backlinks, citations, social signals).",
-        keywords: "on-page SEO, off-page SEO, technical SEO, backlinks, SEO strategies difference"
-      }
+      answer: "On-page SEO refers to optimization elements on your website (content, HTML tags, internal linking). Off-page SEO involves activities outside your website (backlinks, social signals, citations). Both are essential for comprehensive SEO success. On-page SEO controls what you can change on your site, while off-page SEO builds authority and trust signals from other websites."
     },
     {
       question: "How often should I publish new content for SEO?",
-      answer: "Consistency matters more than frequency. It's better to publish one high-quality, comprehensive piece per week than multiple low-quality articles. Focus on content depth, relevance, and value rather than arbitrary publishing schedules. For competitive industries, aim for 2-4 comprehensive articles monthly, while less competitive niches may succeed with 1-2 monthly pieces.",
-      meta: {
-        title: "Content Publishing Frequency for SEO | Quality vs Quantity | 2025 Best Practices",
-        description: "SEO content frequency: prioritize quality over quantity. 1-2 comprehensive articles weekly for competitive niches, 2-4 monthly for less competitive markets.",
-        keywords: "content frequency, SEO publishing, content strategy, blog posting schedule, content quality"
-      }
+      answer: "Consistency matters more than frequency. It's better to publish one high-quality, comprehensive piece per week than multiple low-quality articles. Focus on content depth, relevance, and value rather than arbitrary publishing schedules. For competitive industries, aim for 2-4 comprehensive articles monthly, while less competitive niches may succeed with 1-2 monthly pieces."
     },
     {
       question: "What are core web vitals and why do they matter?",
-      answer: "Core Web Vitals are Google's metrics for measuring user experience, including loading performance, interactivity, and visual stability. They directly impact rankings and user satisfaction, making them crucial for modern SEO strategies. The three main metrics are LCP (loading performance), FID (interactivity), and CLS (visual stability), with specific thresholds for good user experience.",
-      meta: {
-        title: "Core Web Vitals 2025 | LCP, FID, CLS | Google Ranking Factors & User Experience",
-        description: "Core Web Vitals are Google's user experience metrics (LCP, FID, CLS) that directly impact search rankings and require specific performance thresholds.",
-        keywords: "Core Web Vitals, LCP, FID, CLS, page experience, Google ranking factors"
-      }
+      answer: "Core Web Vitals are Google's metrics for measuring user experience, including loading performance, interactivity, and visual stability. They directly impact rankings and user satisfaction, making them crucial for modern SEO strategies. The three main metrics are LCP (loading performance), FID (interactivity), and CLS (visual stability), with specific thresholds for good user experience."
     },
     {
       question: "How important are backlinks for SEO in 2025?",
-      answer: "Backlinks remain extremely important as they serve as votes of confidence from other websites. Quality and relevance matter more than quantity. Focus on earning links from authoritative, relevant sites in your industry. Google's algorithms continue to prioritize quality backlinks as a primary ranking factor, with emphasis on natural link profiles and editorial value.",
-      meta: {
-        title: "Backlinks Importance 2025 | Quality vs Quantity | Google Ranking Factor Update",
-        description: "Backlinks remain crucial for SEO in 2025 as Google's primary ranking factor, with emphasis on quality, relevance, and natural link acquisition.",
-        keywords: "backlinks importance, link building 2025, Google ranking factors, domain authority, quality backlinks"
-      }
+      answer: "Backlinks remain extremely important as they serve as votes of confidence from other websites. Quality and relevance matter more than quantity. Focus on earning links from authoritative, relevant sites in your industry. Google's algorithms continue to prioritize quality backlinks as a primary ranking factor, with emphasis on natural link profiles and editorial value."
     },
     {
       question: "Should I focus on voice search optimization?",
-      answer: "Yes, with the growth of voice assistants, optimizing for voice search is increasingly important. Focus on natural language, question-based queries, and featured snippet optimization to capture voice search traffic. 50% of all searches will be voice-based by 2025, making voice search optimization essential for future-proofing your SEO strategy.",
-      meta: {
-        title: "Voice Search Optimization 2025 | 50% Voice Searches | Natural Language SEO",
-        description: "Voice search optimization is crucial with 50% of searches becoming voice-based by 2025. Focus on natural language, questions, and featured snippets.",
-        keywords: "voice search optimization, voice SEO, natural language, featured snippets, voice search trends"
-      }
+      answer: "Yes, with the growth of voice assistants, optimizing for voice search is increasingly important. Focus on natural language, question-based queries, and featured snippet optimization to capture voice search traffic. 50% of all searches will be voice-based by 2025, making voice search optimization essential for future-proofing your SEO strategy."
     }
   ];
 
@@ -457,6 +417,22 @@ Prioritize relevance and authority over quantity. A single link from a highly au
               "@type": "Offer",
               "description": "SEO Services"
             }
+          })}
+        </script>
+
+        {/* Consolidated FAQPage Schema - FIXED */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": faq.answer
+              }
+            }))
           })}
         </script>
       </Helmet>
@@ -664,7 +640,7 @@ Prioritize relevance and authority over quantity. A single link from a highly au
         </div>
       </section>
 
-      {/* FAQ Section with Individual SEO */}
+      {/* FAQ Section - Corrected with Single Schema */}
       <section className="py-20 bg-gradient-to-b from-blue-900 to-blue-800 text-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center space-y-6 mb-12">
@@ -674,37 +650,10 @@ Prioritize relevance and authority over quantity. A single link from a highly au
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index}>
-                {/* Individual FAQ SEO */}
-                <Helmet>
-                  <title>{faq.meta.title}</title>
-                  <meta name="description" content={faq.meta.description} />
-                  <meta name="keywords" content={faq.meta.keywords} />
-                  <meta property="og:title" content={faq.meta.title} />
-                  <meta property="og:description" content={faq.meta.description} />
-                </Helmet>
-                
-                <Card className="p-6 border-0 shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/15 transition-colors">
-                  <h3 className="font-semibold text-white text-lg mb-3">{faq.question}</h3>
-                  <p className="text-blue-100 leading-relaxed">{faq.answer}</p>
-                  
-                  {/* FAQ Structured Data */}
-                  <script type="application/ld+json">
-                    {JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "FAQPage",
-                      "mainEntity": {
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": faq.answer
-                        }
-                      }
-                    })}
-                  </script>
-                </Card>
-              </div>
+              <Card key={index} className="p-6 border-0 shadow-lg bg-white/10 backdrop-blur-sm hover:bg-white/15 transition-colors">
+                <h3 className="font-semibold text-white text-lg mb-3">{faq.question}</h3>
+                <p className="text-blue-100 leading-relaxed">{faq.answer}</p>
+              </Card>
             ))}
           </div>
         </div>
