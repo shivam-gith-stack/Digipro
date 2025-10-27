@@ -21,7 +21,9 @@ import {
   Award,
   Shield,
   Clock,
-  DollarSign
+  DollarSign,
+  MapPin,
+  Globe
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import {useNavigate} from "react-router-dom"
@@ -32,10 +34,17 @@ const Home = () => {
   const services = [
     {
       icon: Code,
-      title: "Website Design & Development",
+      title: "Website Development in Mumbai",
       slug: "web-development",
-      description: "Convert-focused websites that look amazing and drive results for your business. Mobile-responsive, fast-loading sites optimized for conversions.",
-      features: ["Responsive Design", "Speed Optimization", "Conversion Rate Optimization", "E-commerce Solutions", "SEO-Friendly Structure"]
+      description: "Leading website designers in Mumbai creating stunning, responsive websites that drive conversions and business growth.",
+      features: ["Custom Website Development", "Mobile-First Design", "E-commerce Solutions", "CMS Development", "Website Maintenance"]
+    },
+    {
+      icon: Search,
+      title: "SEO Agency Mumbai & India",
+      slug: "seo",
+      description: "Top SEO agency in Mumbai providing comprehensive SEO services across India. Dominate Google rankings with our proven strategies.",
+      features: ["Local SEO Mumbai", "National SEO India", "Technical SEO", "Content Strategy", "Link Building"]
     },
     {
       icon: ShoppingCart,
@@ -43,13 +52,6 @@ const Home = () => {
       slug: "ecommerce-marketing",
       description: "Boost your online store with strategies designed to increase traffic, engagement, and sales. Complete e-commerce solutions.",
       features: ["SEO for E-commerce", "Product Listing Ads", "Conversion Funnels", "Email Marketing", "Shopping Campaigns"]
-    },
-    {
-      icon: Search,
-      title: "SEO Optimization & Local SEO",
-      slug: "seo",
-      description: "Rank #1 on Google with our proven SEO strategies. Increase organic traffic by 300% in 6 months with white-hat techniques.",
-      features: ["Keyword Research", "On-Page SEO", "Technical SEO", "Link Building", "Local Citations"]
     },
     {
       icon: Target,
@@ -95,7 +97,7 @@ const Home = () => {
       role: "CEO",
       image: "/api/placeholder/60/60",
       rating: 5,
-      text: "Digital Marketing Pro increased our qualified leads by 400% in just 3 months. Their SEO and PPC strategies are outstanding! The ROI has been incredible."
+      text: "As the best web development company in Mumbai, they delivered an exceptional website that increased our conversions by 300%."
     },
     {
       name: "Michael Chen",
@@ -103,7 +105,7 @@ const Home = () => {
       role: "Owner",
       image: "/api/placeholder/60/60", 
       rating: 5,
-      text: "Our website traffic doubled and we're now ranking #1 for our main keywords. The team's expertise in local SEO transformed our business visibility."
+      text: "This SEO agency Mumbai helped us rank #1 for competitive keywords. Their India SEO company expertise is unmatched."
     },
     {
       name: "Emily Rodriguez",
@@ -111,7 +113,7 @@ const Home = () => {
       role: "Marketing Director",
       image: "/api/placeholder/60/60",
       rating: 5,
-      text: "Best investment we've made in digital marketing. Revenue increased 350% since working with them. Highly recommend their data-driven approach!"
+      text: "Outstanding SEO services in India from a professional web development company in Mumbai. Revenue increased 350%!"
     }
   ];
 
@@ -126,41 +128,41 @@ const Home = () => {
 
   const blogPosts = [
     {
-      title: "10 SEO Mistakes That Are Killing Your Website Traffic in 2024",
-      excerpt: "Discover the common SEO mistakes that prevent websites from ranking on Google and how to fix them immediately.",
+      title: "Website Development in Mumbai: Top Trends for 2024",
+      excerpt: "Discover the latest trends in website development in Mumbai and how top website designers in Mumbai are transforming businesses.",
       date: "March 15, 2024",
       readTime: "8 min read",
-      category: "SEO",
-      slug: "seo-mistakes-killing-website-traffic",
+      category: "Web Development",
+      slug: "website-development-mumbai-trends-2024",
       image: {
         url: "https://media.istockphoto.com/id/935427102/photo/digital-marketing-word-on-blackboard-with-supportive-icons.jpg?s=612x612&w=0&k=20&c=eM94iufXxJqzEJ6p5caJOgyxOZYfrluNV950vSXc2ks=",
-        alt: "SEO mistakes analysis showing declining website traffic analytics",
+        alt: "Website development in Mumbai trends and strategies",
         size: "1200x628px"
       }
     },
     {
-      title: "How to Create High-Converting Facebook Ads in 2024: Complete Guide",
-      excerpt: "Master Facebook advertising with our step-by-step guide to creating ads that convert and maximize your ad spend ROI.",
+      title: "Why Choose an SEO Agency in Mumbai for Your Business Growth",
+      excerpt: "Learn how an SEO agency Mumbai can boost your local visibility while an India SEO company expands your national presence.",
       date: "March 12, 2024", 
       readTime: "6 min read",
-      category: "PPC",
-      slug: "high-converting-facebook-ads-2024",
+      category: "SEO",
+      slug: "seo-agency-mumbai-benefits",
       image: {
         url: "https://media.istockphoto.com/id/456855555/photo/ads-on-digital-background.jpg?s=612x612&w=0&k=20&c=41Z8EmfJ82OTAKBL7sVlRL37KOdu-kuiMwcF1l7dOCo=",
-        alt: "Social media marketing strategy with Facebook ads optimization on smartphone",
+        alt: "SEO agency Mumbai services and benefits for local businesses",
         size: "1200x628px"
       }
     },
     {
-      title: "Complete Guide to Local SEO for Small Businesses: Dominate Your Market",
-      excerpt: "Everything you need to know about local SEO to dominate your local market and attract more customers.",
+      title: "Comprehensive SEO Services in India: A Complete Guide",
+      excerpt: "Everything about SEO services in India from a leading web development company in Mumbai and India SEO company.",
       date: "March 10, 2024",
       readTime: "12 min read", 
-      category: "Local SEO",
-      slug: "local-seo-guide-small-businesses",
+      category: "SEO India",
+      slug: "seo-services-india-complete-guide",
       image: {
         url: "https://media.istockphoto.com/id/1426312062/photo/b2b-partnership-collaboration-or-client-handshake-in-business-meeting-for-welcome-onboarding.jpg?s=612x612&w=0&k=20&c=b2_soSRS9GbkDmfal9xx1_yHgEz37gvh7CxImaDvkxU=",
-        alt: "Local SEO strategy map with business pins showing market dominance",
+        alt: "SEO services in India comprehensive guide and strategies",
         size: "1200x628px"
       }
     }
@@ -170,84 +172,80 @@ const Home = () => {
     { icon: Shield, text: "Google Certified Partner" },
     { icon: Award, text: "Facebook Blueprint Certified" },
     { icon: CheckCircle, text: "10+ Years Experience" },
-    { icon: DollarSign, text: "Money-Back Guarantee" }
+    { icon: DollarSign, text: "Money-Back Guarantee" },
+    { icon: MapPin, text: "Based in Mumbai" },
+    { icon: Globe, text: "Serving Across India" }
   ];
 
   return (
     <div className="overflow-hidden">
       <Helmet>
-        <title>Digital Marketing Agency | SEO, PPC & Social Media Services - 500% ROI Guaranteed</title>
+        <title>Website Development in Mumbai | SEO Agency India | Web Development Company Mumbai</title>
         <meta 
           name="description" 
-          content="Top-rated digital marketing agency offering SEO, PPC, social media marketing & web development. 500% average ROI, 200+ successful campaigns. Free audit available." 
+          content="Leading website designers in Mumbai & SEO agency India. Top web development company in Mumbai offering comprehensive SEO services in India. Get 500% ROI guaranteed." 
         />
         <meta 
           name="keywords" 
-          content="digital marketing agency, SEO services, PPC management, social media marketing, web development, email marketing, content marketing, local SEO, ecommerce marketing, Google Ads, Facebook Ads" 
+          content="website development in Mumbai, website designers in Mumbai, web development company in Mumbai, SEO agency India, SEO services in India, SEO agency Mumbai, India SEO company, digital marketing Mumbai, web designers Mumbai, SEO company India" 
         />
-        <meta property="og:title" content="Digital Marketing Agency | 500% ROI Guaranteed - SEO & PPC Experts" />
-        <meta property="og:description" content="Get proven digital marketing results with our expert SEO, PPC, and social media services. 500% average ROI. Free strategy session available." />
+        <meta property="og:title" content="Website Development in Mumbai | SEO Agency India | Top Web Development Company" />
+        <meta property="og:description" content="Leading website designers in Mumbai & SEO agency India. Professional web development company in Mumbai offering SEO services across India. Free audit available." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://https://lumivexgrowth.in/og-image.jpg" />
+        <meta property="og:image" content="https://lumivexgrowth.in/og-image.jpg" />
         <link rel="canonical" href="https://lumivexgrowth.in/" />
         <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness"],
-  "name": "Lumivex Growth",
-  "url": "https://lumivexgrowth.in/",
-  "logo": "https://lumivexgrowth.in/logo.png",
-  "image": "https://lumivexgrowth.in/logo.png",
-  "description": "Lumivex Growth is a digital marketing agency in Mumbai offering SEO, Google Ads, and social media marketing — 100% remote services for startups and enterprises.",
-  "email": "shivam.gupta14083110@gmail.com",
-  "telephone": "+91-9702845312",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Mumbai",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "IN"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Shivam Gupta"
-  },
-  "foundingDate": "2024",
-  "sameAs": [
-    "https://www.facebook.com/lumivexgrowth",
-    "https://www.instagram.com/lumivexgrowth",
-    "https://www.linkedin.com/company/lumivexgrowth"
-  ],
-  "serviceType": ["SEO Service", "Digital Marketing Service", "Google Ads Management", "Social Media Marketing"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "27"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Rohit Sharma"
-      },
-      "datePublished": "2025-10-10",
-      "reviewBody": "Lumivex Growth helped us grow organic leads by 200% through SEO and paid marketing campaigns. Highly professional remote team.",
-      "name": "Excellent Digital Marketing Services",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "itemReviewed": {
-        "@type": "Service",
-        "name": "SEO and Google Ads Management",
-        "serviceType": "Digital Marketing Service"
-      }
-    }
-  ]
-}
-</script>
-
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["Organization", "LocalBusiness"],
+            "name": "Lumivex Growth",
+            "url": "https://lumivexgrowth.in/",
+            "logo": "https://lumivexgrowth.in/logo.png",
+            "description": "Leading website development company in Mumbai and SEO agency India offering comprehensive digital marketing services across India.",
+            "email": "shivam.gupta14083110@gmail.com",
+            "telephone": "+91-9702845312",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Mumbai",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "serviceType": [
+              "Website Development Service",
+              "SEO Service", 
+              "Digital Marketing Service",
+              "Web Design Service"
+            ],
+            "areaServed": "India",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Digital Marketing Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Website Development in Mumbai",
+                    "description": "Professional website development services by expert website designers in Mumbai"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "SEO Services in India",
+                    "description": "Comprehensive SEO services across India from leading SEO agency"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "27"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -259,23 +257,30 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
           <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-sm">
             <Zap className="w-4 h-4 mr-2 text-yellow-300" />
-            <span className="text-sm font-medium">Certified Google & Facebook Partner</span>
+            <span className="text-sm font-medium">Top Website Designers in Mumbai | SEO Agency India</span>
           </div>
 
+          {/* H1 with Keywords */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Results-Driven Digital Marketing Services That
-            <span className="text-orange-500 block mt-2">Grow Your Business</span>
+            Website Development Company in Mumbai & 
+            <span className="text-orange-500 block mt-2">SEO Agency India</span>
           </h1>
 
+          {/* H2 with Keywords */}
           <h2 className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Join 200+ successful businesses achieving 500% ROI increases with our proven digital marketing strategies. 
-            Data-driven approach delivering measurable results since 2014.
+            Leading website designers in Mumbai offering comprehensive SEO services in India. 
+            As a premier SEO agency Mumbai and India SEO company, we deliver 500% ROI guaranteed.
           </h2>
 
-          <Button onClick={() => navigate("/contact")} size="lg" className="bg-orange-500 text-white hover:bg-orange-600 font-semibold px-8 py-3 text-lg shadow-lg shadow-orange-500/30 mt-4">
-            Get Free Marketing Audit
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            <Button onClick={() => navigate("/contact")} size="lg" className="bg-orange-500 text-white hover:bg-orange-600 font-semibold px-8 py-3 text-lg shadow-lg shadow-orange-500/30">
+              Get Free Website Audit
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button onClick={() => navigate("/seo-audit")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold px-8 py-3 text-lg">
+              Free SEO Analysis
+            </Button>
+          </div>
 
           <div className="flex flex-wrap justify-center gap-8 pt-12 opacity-90">
             {trustSignals.map((signal, index) => (
@@ -292,9 +297,9 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Proven Results You Can Trust</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Our Web Development Company in Mumbai</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our data-driven approach delivers consistent, measurable results for businesses across industries
+              As leading website designers in Mumbai and SEO agency India, we deliver measurable results for businesses across India
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -317,10 +322,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-              Comprehensive Digital Marketing Services
+              Website Development Mumbai & SEO Services India
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              End-to-end digital marketing solutions designed to drive growth, increase visibility, and maximize ROI for your business.
+              Comprehensive digital marketing solutions from Mumbai's top website designers and India's leading SEO agency
             </p>
           </div>
 
@@ -359,24 +364,24 @@ const Home = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="space-y-4">
                 <div className="w-12 h-12 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-blue-600" />
+                  <MapPin className="w-6 h-6 text-blue-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">Data-Driven Strategy</h4>
-                <p className="text-gray-600 text-sm">Every decision backed by analytics and performance data</p>
+                <h4 className="text-lg font-semibold text-gray-800">Website Development in Mumbai</h4>
+                <p className="text-gray-600 text-sm">Expert website designers in Mumbai creating stunning, responsive websites</p>
               </div>
               <div className="space-y-4">
                 <div className="w-12 h-12 mx-auto bg-green-100 rounded-full flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-green-600" />
+                  <Globe className="w-6 h-6 text-green-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">White-Hat Techniques</h4>
-                <p className="text-gray-600 text-sm">Ethical, sustainable marketing practices that deliver lasting results</p>
+                <h4 className="text-lg font-semibold text-gray-800">SEO Agency India</h4>
+                <p className="text-gray-600 text-sm">Comprehensive SEO services in India from leading India SEO company</p>
               </div>
               <div className="space-y-4">
                 <div className="w-12 h-12 mx-auto bg-orange-100 rounded-full flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-orange-600" />
+                  <Award className="w-6 h-6 text-orange-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-800">24/7 Campaign Monitoring</h4>
-                <p className="text-gray-600 text-sm">Continuous optimization and real-time performance tracking</p>
+                <h4 className="text-lg font-semibold text-gray-800">Web Development Company Mumbai</h4>
+                <p className="text-gray-600 text-sm">Top-rated web development company in Mumbai with proven track record</p>
               </div>
             </div>
           </div>
@@ -388,10 +393,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-              Trusted by 50+ Businesses Worldwide
+              Trusted by Businesses Across Mumbai & India
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See how we've helped businesses across industries achieve remarkable growth and outstanding ROI.
+              See why we're recognized as leading website designers in Mumbai and top SEO agency India
             </p>
           </div>
 
@@ -447,10 +452,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-              Latest Digital Marketing Insights & Strategies
+              Expert Insights: Website Development Mumbai & SEO India
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Stay ahead of the competition with expert tips, proven strategies, and industry insights from our marketing experts.
+              Latest trends and strategies from leading website designers in Mumbai and SEO agency India experts
             </p>
           </div>
 
@@ -511,14 +516,36 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Location Specific CTA */}
+      <section className="py-16 bg-gray-800 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Looking for Website Development in Mumbai or SEO Services in India?
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            As a premier web development company in Mumbai and SEO agency India, we serve clients across Mumbai and nationwide. 
+            Get expert solutions from leading website designers in Mumbai and India SEO company specialists.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button onClick={() => navigate("/contact")} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8">
+              Contact Mumbai Office
+            </Button>
+            <Button onClick={() => navigate("/india-seo-services")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+              India SEO Services
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Enhanced CTA Section */}
       <CTASection
-        title="Ready to Transform Your Digital Presence & Drive Real Results?"
-        description="Join 200+ successful businesses that have achieved exceptional growth with our proven digital marketing strategies. Get your free comprehensive audit today."
-        primaryButtonText="Get Free Marketing Audit"
-        secondaryButtonText="Schedule Strategy Call"
+        title="Ready to Work with Top Website Designers in Mumbai & SEO Agency India?"
+        description="Get comprehensive website development in Mumbai and SEO services in India from our expert team. As a leading web development company in Mumbai and India SEO company, we deliver 500% ROI guaranteed."
+        primaryButtonText="Get Free Mumbai Website Audit"
+        secondaryButtonText="India SEO Consultation"
         variant="primary"
         onPrimaryClick={() => navigate("/contact")}
+        onSecondaryClick={() => navigate("/seo-consultation")}
       />
     </div>
   );
