@@ -10,7 +10,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://lumivex-growth.vercel.app"],
+    origin: ["https://lumivex-growth.vercel.app" , "https://www.lumivexgrowth.in",
+    "https://lumivexgrowth.in"],
     credentials: true,
   })
 );
