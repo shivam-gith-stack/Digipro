@@ -1,26 +1,31 @@
 const express = require("express");
 const cors = require("cors");
-const app = express();
 const dotenv = require("dotenv");
-dotenv.config({ path: "./config.env" });
 const bodyparser = require("body-parser");
 const dbconnection = require("./database");
 
-app.use(cors({
-    origin: ["https://lumivex-growth.vercel.app"], 
-    credentials: true
-}));
+dotenv.config({ path: "./config.env" });
+
+const app = express();
+
+app.use(
+  cors({
+    origin: ["https://lumivex-growth.vercel.app"],
+    credentials: true,
+  })
+);
 app.options("*", cors());
-
 app.use(express.json());
-app.use(bodyparser.json()); 
+app.use(bodyparser.json());
 
-const users = require('./router');
-app.use('/api/v1', users);
+const users = require("./router");
+app.use("/api/v1", users);
+
+const chatbaseRoute = require("./chatbase");
+app.use("/api/chat", chatbaseRoute);
 
 const PORT = process.env.PORT;
-
 app.listen(PORT, () => {
-    dbconnection();
-    console.log("database connection success");
+  dbconnection();
+  console.log("✅ Database connection success");
 });

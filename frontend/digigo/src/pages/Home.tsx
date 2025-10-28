@@ -26,15 +26,61 @@ import {
   Globe
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   
+  // Typewriter effect for rotating cities
+  const [displayText, setDisplayText] = useState("");
+  const [cityIndex, setCityIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const cities = ["Mumbai", "Pune", "Bangalore", "Delhi", "Hyderabad", "Chennai", "Noida" , "Kolkata" , "Ahmedabad", "Jaipur", "Indore", "Coimbatore", "Kochi" ,"Lucknow" ,"Bhubaneswar" ,"Nagpur" ,"Trivandrum", "Surat" ,"Chandigarh & Mohali" ,"Vadodara" ,"Mysuru"];
+
+  useEffect(() => {
+    const currentCity = cities[cityIndex];
+    
+    if (isPaused) {
+      const pauseTimer = setTimeout(() => {
+        setIsPaused(false);
+        setIsDeleting(true);
+      }, 1500); // Pause for 1.5 seconds after typing complete
+      return () => clearTimeout(pauseTimer);
+    }
+
+    if (!isDeleting && !isPaused) {
+      // Typing effect
+      if (displayText.length < currentCity.length) {
+        const timer = setTimeout(() => {
+          setDisplayText(currentCity.slice(0, displayText.length + 1));
+        }, 100); // Typing speed
+        return () => clearTimeout(timer);
+      } else {
+        // Finished typing, start pause
+        setIsPaused(true);
+      }
+    } else if (isDeleting) {
+      // Deleting effect
+      if (displayText.length > 0) {
+        const timer = setTimeout(() => {
+          setDisplayText(displayText.slice(0, displayText.length - 1));
+        }, 50); // Deleting speed (faster than typing)
+        return () => clearTimeout(timer);
+      } else {
+        // Finished deleting, move to next city
+        setIsDeleting(false);
+        setCityIndex((prev) => (prev + 1) % cities.length);
+      }
+    }
+  }, [displayText, cityIndex, isDeleting, isPaused]);
+
   const services = [
     {
       icon: Code,
-      title: "Website Development in Mumbai",
+      title: "Website Development",
       slug: "web-development",
       description: "Leading website designers in Mumbai creating stunning, responsive websites that drive conversions and business growth.",
       features: ["Custom Website Development", "Mobile-First Design", "E-commerce Solutions", "CMS Development", "Website Maintenance"]
@@ -248,7 +294,7 @@ const Home = () => {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
+      {/* Hero Section with Rotating Cities */}
       <section className="relative bg-gradient-to-br from-blue-800 via-blue-700 to-orange-900/30 text-white py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-orange-400/10" />
         <div className="absolute top-10 right-10 w-72 h-72 bg-orange-500/20 rounded-full blur-3xl" />
@@ -257,19 +303,25 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
           <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full border border-white/30 backdrop-blur-sm">
             <Zap className="w-4 h-4 mr-2 text-yellow-300" />
-            <span className="text-sm font-medium">Top Website Designers in Mumbai | SEO Agency India</span>
+            <span className="text-sm font-medium">Top Website Designers | SEO Agency India</span>
           </div>
 
-          {/* H1 with Keywords */}
+          {/* H1 with Rotating Cities Typewriter Effect */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Website Development Company in Mumbai & 
-            <span className="text-orange-500 block mt-2">SEO Agency India</span>
-          </h1>
-
+  <span className="block">Website Development Company in</span>
+  <span className="text-orange-500 block mt-2 text-center">
+    <span className="inline-block min-w-[200px]">
+      {displayText}
+      <span className="ml-1 animate-pulse">|</span>
+    </span>
+  </span>
+  <span className="text-orange-500 block mt-2">SEO Agency India</span>
+</h1>
           {/* H2 with Keywords */}
           <h2 className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Leading website designers in Mumbai offering comprehensive SEO services in India. 
-            As a premier SEO agency Mumbai and India SEO company, we deliver 500% ROI guaranteed.
+            India’s first AI-integrated digital marketing agency empowering brands with data-driven growth.  
+We deliver up to 500% ROI through advanced SEO and AI-powered marketing strategies.
+
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
@@ -277,7 +329,7 @@ const Home = () => {
               Get Free Website Audit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button onClick={() => navigate("/seo-audit")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold px-8 py-3 text-lg">
+            <Button onClick={() => navigate("/contact")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold px-8 py-3 text-lg">
               Free SEO Analysis
             </Button>
           </div>
@@ -297,9 +349,9 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Our Web Development Company in Mumbai</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Our Web Development Company in India</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              As leading website designers in Mumbai and SEO agency India, we deliver measurable results for businesses across India
+              As a leading website design and SEO agency in India, based in Mumbai, we deliver measurable growth and results nationwide.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -322,7 +374,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-              Website Development Mumbai & SEO Services India
+              Website Development | SEO Services India
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive digital marketing solutions from Mumbai's top website designers and India's leading SEO agency
@@ -530,7 +582,7 @@ const Home = () => {
             <Button onClick={() => navigate("/contact")} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8">
               Contact Mumbai Office
             </Button>
-            <Button onClick={() => navigate("/india-seo-services")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+            <Button onClick={() => navigate("/contact")} size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
               India SEO Services
             </Button>
           </div>
@@ -545,7 +597,7 @@ const Home = () => {
         secondaryButtonText="India SEO Consultation"
         variant="primary"
         onPrimaryClick={() => navigate("/contact")}
-        onSecondaryClick={() => navigate("/seo-consultation")}
+        onSecondaryClick={() => navigate("/contact")}
       />
     </div>
   );

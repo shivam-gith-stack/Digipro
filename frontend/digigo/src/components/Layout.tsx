@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot"; // Import the chatbot
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,7 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
         />
         <meta 
           name="keywords" 
-          content="digital marketing agency, SEO services, PPC management, social media marketing, web development, email marketing, content marketing, local SEO, ecommerce marketing" 
+          content="digital marketing agency, SEO services, PPC management, social media marketing, web development, email marketing, content marketing, local SEO, ecommerce marketing, website development in Mumbai, SEO agency India, web development company in Mumbai" 
         />
         
         {/* Essential Meta Tags */}
@@ -61,9 +62,9 @@ const Layout = ({ children }: LayoutProps) => {
             "description": "Expert digital marketing services including SEO, PPC, social media marketing, and web development.",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Global",
-              "addressRegion": "Worldwide",
-              "addressCountry": "Global"
+              "addressLocality": "Mumbai",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
             },
             "contactPoint": {
               "@type": "ContactPoint",
@@ -81,6 +82,24 @@ const Layout = ({ children }: LayoutProps) => {
             ]
           })}
         </script>
+
+        {/* Additional Schema for Chatbot */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "LumivexGrowth AI Chatbot",
+            "url": "https://lumivexgrowth.in",
+            "description": "AI-powered chatbot for digital marketing assistance, website development queries, and SEO services information.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "All",
+            "permissions": "microphone",
+            "offers": {
+              "@type": "Offer",
+              "description": "Free digital marketing consultation"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Your existing layout structure */}
@@ -90,6 +109,9 @@ const Layout = ({ children }: LayoutProps) => {
           {children}
         </main>
         <Footer />
+        
+        {/* Chatbot - Appears on all pages at bottom-right */}
+        <Chatbot />
       </div>
     </>
   );
