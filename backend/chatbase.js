@@ -1,8 +1,6 @@
-// chatbase.js
-import express from "express";
-import axios from "axios";
-import dotenv from "dotenv";
-
+const express = require("express")
+const axios = require("axios")
+const dotenv = require("dotenv")
 dotenv.config();
 
 const router = express.Router();
@@ -14,33 +12,29 @@ router.post("/", async (req, res) => {
   try {
     const { message } = req.body;
 
-    // Setup connection to Chatbase API (with stream: true)
     const response = await axios.post(
       "https://www.chatbase.co/api/v1/chat",
       {
         messages: [{ role: "user", content: message }],
         chatId: CHATBASE_AGENT_ID,
         temperature: 0.7,
-        stream: true, // Enable streaming mode
+        stream: true,
       },
       {
         headers: {
           Authorization: `Bearer ${CHATBASE_API_KEY}`,
           "Content-Type": "application/json",
         },
-        responseType: "stream", // Important for streaming
+        responseType: "stream",
       }
     );
 
-    // Set headers for chunked streaming
     res.setHeader("Content-Type", "text/event-stream");
     res.setHeader("Cache-Control", "no-cache");
     res.setHeader("Connection", "keep-alive");
 
-    // Forward the Chatbase stream to frontend
     response.data.on("data", (chunk) => {
-      const textChunk = chunk.toString();
-      res.write(textChunk);
+      res.write(chunk.toString());
     });
 
     response.data.on("end", () => {
@@ -60,4 +54,5 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router;
+// ✅ Add this line to export the router
+module.exports = router;
