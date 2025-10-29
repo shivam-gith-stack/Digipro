@@ -4,7 +4,6 @@ const dotenv = require("dotenv");
 const bodyparser = require("body-parser");
 const dbconnection = require("./database");
 const users = require("./router");
-const chatbaseRoute = require("./chatbase");
 
 dotenv.config({ path: "./config.env" });
 
@@ -42,11 +41,12 @@ app.use((req, res, next) => {
   next();
 });
 
+app.options("*", cors());
+
 app.use(express.json());
 app.use(bodyparser.json());
 
 app.use("/api/v1", users);
-app.use("/api/chat", chatbaseRoute);
 
 const PORT = process.env.PORT || 5000;
 

@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Chatbot from "@/components/Chatbot"; // Import the chatbot
 
 interface LayoutProps {
   children: ReactNode;
@@ -111,7 +110,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Footer />
         
         {/* Chatbot - Appears on all pages at bottom-right */}
-        <Chatbot />
+       
       </div>
     </>
   );
