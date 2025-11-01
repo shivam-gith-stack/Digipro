@@ -1,5 +1,4 @@
 const express = require("express");
-const prerender = require("prerender-node");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const bodyparser = require("body-parser");
@@ -9,9 +8,6 @@ const users = require("./router");
 dotenv.config({ path: "./config.env" });
 
 const app = express();
-
-prerender.set("prerenderToken", "d36CRx6aNtIrP9KXoQuR");
-app.use(prerender);
 
 // ✅ FIXED CORS SETUP
 const allowedOrigins = [
