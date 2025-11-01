@@ -1,8 +1,41 @@
 {
   "routes": [
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml", "headers": { "Content-Type": "application/xml" } },
-    { "src": "/robots.txt", "dest": "/robots.txt", "headers": { "Content-Type": "text/plain" } },
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/" }
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml",
+      "headers": { "Content-Type": "application/xml" }
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt",
+      "headers": { "Content-Type": "text/plain" }
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(googlebot|bingbot|yandex|baiduspider|duckduckbot|slurp|facebookexternalhit|twitterbot|linkedinbot)"
+        }
+      ],
+      "dest": "https://service.prerender.io/https://lumivexgrowth.in/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Prerender-Token", "value": "d36CRx6aNtIrP9KXoQuR" }
+      ]
+    }
   ]
 }
