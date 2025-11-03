@@ -126,13 +126,6 @@ const Home = () => {
       slug: "email-marketing",
       description: "Nurture leads and increase customer lifetime value with automated email sequences. Personalized communication.",
       features: ["Email Campaigns", "Automation Setup", "List Building", "A/B Testing", "Performance Analytics"]
-    },
-    {
-      icon: Shield,
-      title: "Digital Marketing Strategy",
-      slug: "digital-strategy",
-      description: "Comprehensive digital marketing roadmap tailored to your business goals and target audience.",
-      features: ["Market Analysis", "Competitor Research", "Strategy Development", "KPI Setting", "Performance Monitoring"]
     }
   ];
 
@@ -400,7 +393,7 @@ We deliver up to 500% ROI through advanced SEO and AI-powered marketing strategi
                       </li>
                     ))}
                   </ul>
-                  <Link to={`/services/${service.slug}`}>
+                  <Link to={service.slug}>
                     <Button variant="outline" className="w-full group border-gray-300 text-gray-800 hover:bg-blue-50 hover:border-blue-300">
                       Learn More
                       <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
