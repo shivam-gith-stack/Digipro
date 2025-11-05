@@ -23,19 +23,13 @@
           "value": "(googlebot|bingbot|yandex|baiduspider|duckduckbot|slurp|facebookexternalhit|twitterbot|linkedinbot)"
         }
       ],
-      "dest": "https://service.prerender.io/https://lumivexgrowth.in/$1"
+      "dest": "https://service.prerender.io/https://lumivexgrowth.in/$1",
+      "headers": { "X-Prerender-Token": "d36CRx6aNtIrP9KXoQuR" }
     },
     {
       "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Prerender-Token", "value": "d36CRx6aNtIrP9KXoQuR" }
-      ]
+      "dest": "/",
+      "headers": { "X-Prerender-Token": "d36CRx6aNtIrP9KXoQuR" }
     }
   ]
 }
